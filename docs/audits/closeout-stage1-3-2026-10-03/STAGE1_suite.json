@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "mini fixtures / disposable legacy workspaces; baseline product code",
+  "stdout": "...................................................................xxxxx [ 41%]\n..................................................................xxxxxx [ 82%]\nxxxxxxxx.......................                                          [100%]\n156 passed, 19 xfailed in 1.93s\n",
+  "stderr": "",
+  "exit_status": 0
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_pipeline_cache.py",
+    "tests/python/test_pipeline_golden.py",
+    "tests/python/test_manifest.py",
+    "tests/python/test_aggregate.py",
+    "tests/python/test_codeql.py",
+    "tests/python/test_codefuse.py"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "real pipeline / adapters with mini fixtures and versioned fake analyzers",
+  "stdout": "........................................................................ [ 73%]\n..........................                                               [100%]\n98 passed in 9.78s\n",
+  "stderr": "",
+  "exit_status": 0
+}

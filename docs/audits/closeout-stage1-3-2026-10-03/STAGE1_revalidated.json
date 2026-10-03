@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-baseline-cmi1jsds",
+  "input": "immutable 34b28fe product + strict xfail baseline regressions",
+  "exit_status": 0,
+  "stdout": "...................................................................xxxxx [ 41%]\n..................................................................xxxxxx [ 82%]\nxxxxxxxx.......................                                          [100%]\n156 passed, 19 xfailed in 1.24s\n",
+  "stderr": ""
+}

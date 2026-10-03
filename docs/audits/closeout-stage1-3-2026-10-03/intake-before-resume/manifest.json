@@ -1,0 +1,30 @@
+{
+  "head": "6706c822df973a29df8d7379c1cbc135164a8da7",
+  "branch": "codex/vep-closeout-stage1-3",
+  "files": {
+    "tests/python/test_pipeline_cache.py": {
+      "sha256": "f85032cd6c1e51e11b4bbfec084181989a8a18c303b7f9d17306148a84fbe096",
+      "mode": 420
+    },
+    "tests/python/test_pipeline_golden.py": {
+      "sha256": "3911fbc2ba0ecea3bb6f1e9aa260faa9d6af7bdeed33cd1c754a5cbb93570ce8",
+      "mode": 420
+    },
+    "vep/core/manifest.py": {
+      "sha256": "17a7834cc280d006391b5c584cb70ef7ea79f541b040e3405df7a3392c2af6c0",
+      "mode": 420
+    },
+    "vep/evaluation/aggregate.py": {
+      "sha256": "def464bbbfae464f796a5c3c2e090b02e5130dfa421e43b25295ccb7561bb8d0",
+      "mode": 420
+    },
+    "vep/pipeline.py": {
+      "sha256": "b79754a57819a838cff83e8e515dcb6580a79ffae4e43170e961b639a4292184",
+      "mode": 420
+    },
+    "vep/pipeline_cache.py": {
+      "sha256": "7a18751fbac9dd30e957925dc235fbc2dc2d0599ed25d6bf05000ad7db55885c",
+      "mode": 420
+    }
+  }
+}

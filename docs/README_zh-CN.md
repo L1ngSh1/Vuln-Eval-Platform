@@ -3,7 +3,7 @@
 
 [👉 Click here to view the English Version](../README.md)
 
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-MIT%20%2B%20third--party-green)
 ![OWASP](https://img.shields.io/badge/OWASP-Benchmark-important)
 ![Created by L1ngSh1](https://img.shields.io/badge/Created%20by-L1ngSh1-purple)
 
@@ -31,7 +31,16 @@
 
 ## 🆕 版本说明
 
-### v3.0.0（当前版本）
+### v3.0.1（最终收尾版）
+
+- 修复缓存有效性／完整性、重复 CWE 总计及旧入口退出码、SARIF、临时文件路径。
+- 明确样本身份、双 FP 口径、标准 `fpr_in_scope` 和报告合并兼容性。
+- 固化双工具规范化输入、GT、哈希与已验证依赖。
+- 最终复现承诺是**归档结果离线重放**，不是跨平台重新建库／执行分析器。
+- 详见 [离线重放](guides/offline_replay.md)、[指标契约](guides/metric_contract.md)、[已知限制／归档门槛](ARCHIVE.md)、[第三方许可证](../THIRD_PARTY_NOTICES.md)。
+- 发布和 GitHub 只读归档分开；归档仍需最后单独确认。
+
+### v3.0.0（历史版本）
 
 - CodeFuse-Query 与 CodeQL 统一使用 `scripts/evaluation/run_pipeline.py`。
 - 新增工具自动发现和 CodeFuse `JAVA_HOME` 环境门禁。
@@ -142,6 +151,27 @@ Vuln-Eval-Lab
 
 ---
 
+## ✅ 重放最终归档结果
+
+```bash
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock
+.venv/bin/python scripts/evaluation/reproduce_archived_results.py --out-dir /tmp/vep-replay --plots
+```
+
+安装依赖后，重放不需要网络、分析器、ignored 输入或分析数据库。两种口径使用同一份保留的 findings 与 GT，不做静默 FP 过滤。
+
+| 工具 | all_non_gt P / R / F1 | in_scope P / R / F1 | 范围外计数 | fpr_in_scope |
+|---|---|---|---:|---:|
+| CodeFuse-Query | 0.7194 / 1.0000 / 0.8368 | 0.7194 / 1.0000 / 0.8368 | 0 | 0.4166 |
+| CodeQL | 0.3876 / 1.0000 / 0.5586 | 0.7271 / 1.0000 / 0.8420 | 1705 | 0.4008 |
+
+统计单位为每 CWE 的规范化 testcase，固定 11 个 CWE 范围分别求和。旧 all_non_gt `fpr`（0.4166 / 0.7380）保留为**自定义**比率，不称为标准误报率。Benchmark 结果不证明真实工程的工具排名或零漏报。
+
+## 历史分析器配置（仅供参考）
+
+以下建库／执行命令保留自旧版本；此次收尾未补验固定版本重新建库和执行分析器。平台与历史版本缺口见 [已知限制](ARCHIVE.md)。
+
 ## 🔧 安装 CodeQL
 
 参考官方发布地址：
@@ -201,9 +231,9 @@ python3 scripts/check_codefuse_java_env.py
 ### Python 环境
 
 ```bash
-python3 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.lock
 ```
 
 ### 运行评估
@@ -277,7 +307,7 @@ evaluate-only 模式读取的是 normalized CSV，而不是只有 SARIF 就能�
 
 # 📊 评测指标
 
-本项目采用标准漏洞检测评测指标体系：
+新报告保留 `fp_mode`、GT／样本身份，并区分标准指标与旧自定义口径：
 
 | 指标      | 含义             |
 | --------- | ---------------- |
@@ -287,7 +317,8 @@ evaluate-only 模式读取的是 normalized CSV，而不是只有 SARIF 就能�
 | Precision | 检测准确率       |
 | Recall    | 漏洞召回率       |
 | FNR       | 漏报率           |
-| FPR       | 误报率           |
+| fpr_in_scope | FP_in_scope / (FP_in_scope + TN_in_scope)，未定义时为 null |
+| fpr（旧 all_non_gt） | 自定义 FP_all_non_gt / (FP_all_non_gt + TN_in_scope)，不是标准 FPR |
 | FDR       | 误检率           |
 
 ---
@@ -329,25 +360,19 @@ python scripts/verify_manifest.py
 python -m pytest
 ```
 
-当前共有 156 个测试。GitHub Actions 在 Python 3.9/3.11 上执行编译、manifest
-验证和 pytest；golden fixtures 保护 CWE-328 的 `328S` ground-truth 语义。
+收尾测试集共 257 个测试。GitHub Actions 使用锁定依赖，在 Python 3.9/3.11 上执行编译、manifest、pytest 和归档离线重放；golden fixtures 保留 CWE-328 的 `328S` ground-truth 语义。
 
 ---
 
-# 🚧 未来规划
+# 📦 收尾与归档
 
-* 在保持当前零 FN 基线的前提下降低 FP
-* 扩展更多 CWE checker 和静态分析工具 adapter
-* 在 Linux 上补充 CodeFuse 全链路复现
-* 研究 path、field 和 context sensitivity 等精度能力
+收尾版结束功能开发，不扩展 CWE、工具或 UI，不进行共享污点分析大重构，也不以误报清零扩展规则。[归档门槛与已知限制](ARCHIVE.md) 规定最终检查；GitHub 归档作为最后的单独确认动作。
 
 ---
 
 # 📄 许可证
 
-本项目基于 MIT 开源许可证发布
-您可以在遵守许可证条款的前提下自由使用、修改和分发本项目
-完整许可证内容请参见 [LICENSE](../LICENSE) 文件
+VEP 自有平台代码采用 MIT；随附 OWASP Benchmark 保持 GPL-2.0，CodeQL 源码与 Web 素材保持各自上游条款。详见 [LICENSE](../LICENSE) 与 [第三方声明](../THIRD_PARTY_NOTICES.md)。
 
 ---
 
@@ -365,6 +390,6 @@ Vuln-Eval-Platform 的目标是构建一个结构化、可扩展、可复现的�
 
 该项目既是一个研究实验平台，也记录了作者在安全研究与工程实践中的探索过程。
 
-项目目前仍在持续演进中，欢迎对静态分析与漏洞检测感兴趣的研究者参与改进、提出建议或贡献规则。
+最终快照保留实验与可复现证据，供研究和教学使用；后续研究可在另行维护的 fork 中继续。
 
 如果本项目能够在安全研究或教学中提供帮助，将是作者非常欣慰的事情。

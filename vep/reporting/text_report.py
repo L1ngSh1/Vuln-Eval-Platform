@@ -204,6 +204,9 @@ def generate_english_report(report: ReportData) -> str:
     if len(tools) >= 2:
         sections.append("### Precision Comparison\n![Precision](figs/precision_comparison.png)\n\n")
 
+    if any(tm.metric_modes for tm in report.overall.values()):
+        sections.append("### Both FP Definitions\n![FP modes](figs/metric_modes_comparison.png)\n\n")
+
     # Technical interpretation
     sections.append("\n---\n\n## Technical Interpretation\n\n")
     sections.append(
@@ -285,6 +288,9 @@ def generate_chinese_report(report: ReportData) -> str:
     if len(tools) >= 2:
         sections.append("### 准确率工具对比\n![Precision](figs/precision_comparison.png)\n\n")
 
+    if any(tm.metric_modes for tm in report.overall.values()):
+        sections.append("### 两种 FP 口径\n![FP modes](figs/metric_modes_comparison.png)\n\n")
+
     # Technical interpretation
     sections.append("\n---\n\n## 技术分析与总结\n\n")
     sections.append(
@@ -305,9 +311,7 @@ def generate_chinese_report(report: ReportData) -> str:
         )
 
     sections.append(
-        "在实际工程实践中：\n\n"
-        "- **高召回率** 确保不遗漏关键漏洞\n"
-        "- **适度误报** 可通过人工审核或规则优化降低\n\n"
+        "这些指标仅描述本报告记录的 Benchmark 样本范围，不证明真实工程零漏报或工具的普遍优劣。\n\n"
     )
 
     # Reproducibility

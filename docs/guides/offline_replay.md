@@ -9,7 +9,7 @@
 ## 运行
 
 ```bash
-python3 -m venv .venv
+python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock
 .venv/bin/python scripts/evaluation/reproduce_archived_results.py \
   --out-dir /tmp/vep-replay --plots

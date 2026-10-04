@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/verify.py",
+    "--mode",
+    "modified"
+  ],
+  "input": "same 25 frozen metric contract regressions + committed mini fixtures",
+  "inner_command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_metric_contract.py"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/vep-stage4-6-modified-f7hspvns",
+  "stdout": ".........................                                                [100%]\n=============================== warnings summary ===============================\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'\n    prop = Group((name + Suppress(\"=\") + comma_separated(value)) | oneOf(_CONSTANTS))\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n    parse = parser.parseString(pattern)\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'\n    parser.resetCache()\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'\n    ParserElement.enablePackrat()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n25 passed, 14 warnings in 0.76s\n",
+  "stderr": "",
+  "literal_output": "MODIFIED: 25 passed, 14 warnings; pytest exit=0",
+  "exit_status": 0,
+  "actions": [
+    {
+      "command": [
+        "git",
+        "apply",
+        "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch"
+      ],
+      "stdout": "",
+      "stderr": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch:8661: trailing whitespace.\ntestcase,ruleId,file,line,message\n/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch:8662: trailing whitespace.\nBenchmarkTest00001,CWE-022,org/owasp/benchmark/testcode/BenchmarkTest00001.java,88,\n/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch:8663: trailing whitespace.\nBenchmarkTest00002,CWE-022,org/owasp/benchmark/testcode/BenchmarkTest00002.java,121,\n/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch:8664: trailing whitespace.\nBenchmarkTest00011,CWE-022,org/owasp/benchmark/testcode/BenchmarkTest00011.java,54,\n/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch:8665: trailing whitespace.\nBenchmarkTest00028,CWE-022,org/owasp/benchmark/testcode/BenchmarkTest00028.java,57,\nwarning: squelched 6069 whitespace errors\nwarning: 6074 lines add whitespace errors.\n",
+      "exit_status": 0
+    }
+  ]
+}

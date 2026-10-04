@@ -243,6 +243,9 @@
     "inputs/codeql/CWE-643.csv": "f0e3e809a85474c3002f83b91dace75b4b1aa5684c07c84c44fd870d2f23fcd6",
     "qlpack.yml": "d43aa7e743a57d034e7e1a7a14f5a11de964247bb59437a5ba084012f9659792",
     "requirements.lock": "2a2eba355bf2ac3a890dbd1eaae519a6783aec9d4ed5714959b303c32e11217c",
-    "rule-inventory.json": "5e3e7fe2dec80ac350c2f7d1def9b7ceb378bbc119aed1758eb870a0466a0885"
+    "rule-inventory.json": "5e3e7fe2dec80ac350c2f7d1def9b7ceb378bbc119aed1758eb870a0466a0885",
+    "OWASP-Benchmark-GPL-2.0.txt": "c03cea027b4b40e4402fabd08557736727ec3d5bc54ad64ab6472de432198cad",
+    "CodeQL-MIT.txt": "66056d06b874e3eb6a22f5fff297e1676a23dc43e8c8b81279c1ef33a6a270df",
+    "CodeFuse-Query-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
   }
 }

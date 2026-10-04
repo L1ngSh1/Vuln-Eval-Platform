@@ -2,9 +2,28 @@
 
 All notable changes to Vuln-Eval-Platform are documented here.
 
-## [Unreleased]
+## [3.0.1] - 2026-10-04
 
-- Precision research for high-FP CWE checkers is planned for the V3.x series.
+### Fixed
+
+- Cache identities now bind inputs, metric mode, evaluator/rules/tool/database context; corrupt or incomplete entries recompute.
+- Ordered CWE deduplication and aggregation guards prevent duplicate totals.
+- Legacy entries propagate real exit codes, normalize SARIF before evaluation, and use private cleaned temporary directories.
+- Metric/report merges reject incompatible FP modes and sample populations instead of silently mixing them.
+
+### Added
+
+- Explicit sample hashes, dual FP-mode metrics, outside-scope counts and standard `fpr_in_scope`; historical all_non_gt and custom `fpr` values remain unchanged.
+- Checksummed normalized inputs for both tools across 11 CWEs, GT, historical metrics, version records, locked dependencies and offline archive replay.
+- 257-test closeout suite, clean-checkout replay acceptance, bilingual reports and FP-mode-aware charts.
+- Complete platform MIT text, third-party notices/licenses, known limits and separate archive gates.
+
+### Compatibility and closeout
+
+- Existing metric schemas remain readable; additive contract fields describe new results. Identity-unknown historical reports can render singly but are not silently combined.
+- The final guarantee is archived-result replay after dependency installation. Fixed-version analyzer rebuilding/execution and cross-platform rule regression were not revalidated.
+- CodeFuse historical run version and original imported source revisions remain explicitly unknown.
+- This is the final feature closeout. Publishing does not make the repository read-only; archival requires a separate explicit final confirmation.
 
 ## [3.0.0] - 2026-09-01
 

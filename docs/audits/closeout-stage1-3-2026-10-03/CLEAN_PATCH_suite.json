@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-clean-patch-l6yr9pop",
+  "input": "34b28fe tracked-only snapshot + final DIFF_FILE.patch; preinstalled runtime, no ignored results/database",
+  "patch_checks": [
+    {
+      "command": [
+        "git",
+        "apply",
+        "--check",
+        "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/DIFF_FILE.patch"
+      ],
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/DIFF_FILE.patch"
+      ],
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "product_hashes_match": true,
+  "exit_status": 0,
+  "stdout": "........................................................................ [ 33%]\n........................................................................ [ 66%]\n.......................................................................  [100%]\n215 passed in 24.87s\n",
+  "stderr": ""
+}

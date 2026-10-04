@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "compileall",
+    "vep/",
+    "scripts/evaluation/",
+    "scripts/reporting/",
+    "scripts/converters/"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "final stage4-6 source and committed replay inputs",
+  "stdout": "Listing 'vep/'...\nCompiling 'vep/__init__.py'...\nListing 'vep/core'...\nListing 'vep/evaluation'...\nListing 'vep/reporting'...\nCompiling 'vep/reporting/text_report.py'...\nListing 'vep/tools'...\nListing 'scripts/evaluation/'...\nCompiling 'scripts/evaluation/reproduce_archived_results.py'...\nListing 'scripts/reporting/'...\nCompiling 'scripts/reporting/generate_report_v2.py'...\nListing 'scripts/converters/'...\n",
+  "stderr": "",
+  "exit_status": 0
+}

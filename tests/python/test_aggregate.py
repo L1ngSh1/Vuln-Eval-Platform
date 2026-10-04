@@ -67,13 +67,12 @@ class TestAggregateMetrics:
                 metrics("CWE-B", 1, 1, 1, 1, tool="codeql"),
             ], tool="codefuse", strict=True)
 
-    def test_non_strict_mixed_fp_mode_reports_mixed(self):
-        agg = aggregate_metrics([
-            metrics("CWE-A", 1, 1, 1, 1, fp_mode="all_non_gt"),
-            metrics("CWE-B", 1, 1, 1, 1, fp_mode="in_scope"),
-        ])
-        assert agg["fp_mode"] == "mixed"
-        assert agg["metadata"]["fp_modes_seen"] == ["all_non_gt", "in_scope"]
+    def test_non_strict_mixed_fp_mode_also_raises(self):
+        with pytest.raises(ValueError, match="Mixed FP modes"):
+            aggregate_metrics([
+                metrics("CWE-A", 1, 1, 1, 1, fp_mode="all_non_gt"),
+                metrics("CWE-B", 1, 1, 1, 1, fp_mode="in_scope"),
+            ])
 
 
 class TestWriteAggregateJson:

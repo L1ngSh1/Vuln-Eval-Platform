@@ -1,0 +1,97 @@
+VEP STAGE 4-6 LOCAL CLOSEOUT VERIFICATION
+Date: 2026-10-04 Asia/Shanghai
+Branch: codex/vep-closeout-stage4-6
+Baseline commit: 41c73a71f08e0264dc9d728a02be727bf13fc216
+Changed branches/fields: fp_mode; metric_contract; sample_scope(dataset_sha256/scope_sha256/unit); metric_modes(all_non_gt/in_scope); fp_in_scope/fp_all_non_gt/outside_scope_findings; fpr_in_scope/fpr_definition; merge/aggregation compatibility; evaluator fingerprint contract.py; archive file/expected checksums; replay failure exits; __version__=3.0.1; locked CI dependencies; license/notice coverage
+Original metrics.py SHA256: 032c3e5848e15e992ea7b90b286a670bb9b24028125c81c94cad3f87da761847
+Modified metrics.py SHA256: cdefcdad01df0020ccb174da9ec1b3a7104d89525f3a325f0bf3a9f4756ddf4a
+Artifacts:
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/MODIFIED_FILE
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/DIFF_FILE.patch
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/VERIFICATION.txt
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/ROLLBACK.sh
+
+BASELINE
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/verify.py --mode baseline
+Input: same 25 frozen metric contract regressions + committed mini fixtures
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_metric_contract.py
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-stage4-6-baseline-5z6f84uz
+Literal stdout: BASELINE: 24 failed, 1 passed, 14 warnings; pytest exit=1
+Command/pytest exit status: 1
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/BASELINE_verified.json
+
+MODIFIED
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/verify.py --mode modified
+Input: same 25 frozen metric contract regressions + committed mini fixtures
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_metric_contract.py
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-stage4-6-modified-f7hspvns
+Literal stdout: MODIFIED: 25 passed, 14 warnings; pytest exit=0
+Command/pytest exit status: 0
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/MODIFIED_verified.json
+
+ROLLBACK
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/verify.py --mode rollback
+Input: same 25 frozen metric contract regressions + committed mini fixtures
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_metric_contract.py
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-stage4-6-rollback-_iib_7t5
+Literal stdout: ROLLBACK: 24 failed, 1 passed, 14 warnings; pytest exit=1; restored=PASS
+Command/pytest exit status: 1
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/ROLLBACK_verified.json
+Rollback exact action command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage4-6-2026-10-04/ROLLBACK.sh /Users/y4n9/Workspace/Projects/My-github-projects/vep-stage4-6-rollback-_iib_7t5
+Rollback action literal stdout: ROLLBACK_ACTION: original hashes/modes restored; new stage4-6 product files removed; exit=0
+Rollback action exit status: 0
+Restored behavior/status: original product hashes/modes and original metric-regression failures restored; new product files removed; restored original full suite PASS
+Restored full suite exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest
+Restored full suite literal result: 215 passed in 25.11s
+Restored full suite exit status: 0
+
+STAGE4-5 ACCEPTANCE
+Commit: abf664e28d49cfcc4e8a8f9b62a2a929af5d119e
+Clean source: git archive HEAD; no ignored files copied
+Interpreter: Python 3.9.6
+Dependency installation command: /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python -m pip install -r requirements.lock
+Dependency installation exit status: 0
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python -c import socket
+try: socket.create_connection(("127.0.0.1",9))
+except RuntimeError as e: print(str(e))
+Input: network-denial-probe
+Literal stdout: network disabled for clean replay verification
+Exit status: 0
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/clean/scripts/evaluation/reproduce_archived_results.py --out-dir /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/replay-clean --plots
+Input: clean archive with no PATH tools and network disabled
+Literal stdout: REPLAY PASS: 2 tools x 11 CWEs x 2 FP modes; historical counts unchanged
+Exit status: 0
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python -m pytest
+Input: full clean suite with freshly installed locked dependencies
+Literal stdout: 257 passed, 14 warnings in 28.48s
+Exit status: 0
+
+FINAL: FINAL_compile.json
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m compileall vep/ scripts/evaluation/ scripts/reporting/ scripts/converters/
+Input: final stage4-6 source and committed replay inputs
+Literal stdout: Listing 'scripts/converters/'...
+Exit status: 0
+
+FINAL: FINAL_manifest.json
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python scripts/verify_manifest.py
+Input: final stage4-6 source and committed replay inputs
+Literal stdout: Phase 1 承诺：本脚本只读检查，不修改任何文件。
+Exit status: 0
+
+FINAL: FINAL_suite.json
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest
+Input: final stage4-6 source and committed replay inputs
+Literal stdout: 257 passed, 14 warnings in 26.44s
+Exit status: 0
+
+FINAL: FINAL_replay.json
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python scripts/evaluation/reproduce_archived_results.py --out-dir /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/replay-final --plots
+Input: final stage4-6 source and committed replay inputs
+Literal stdout: REPLAY PASS: 2 tools x 11 CWEs x 2 FP modes; historical counts unchanged
+Exit status: 0
+
+Publication gate: final commit CI and released asset download/replay verification must pass separately; recorded in final release attachment.
+Archival state: no GitHub archival action in this stage; separate final user confirmation required.
+Historical evidence: all 217 baseline-preserved files unchanged.
+Remaining risks: historic CodeFuse analyzer/import/rule revisions unknown; no fixed-version analyzer rebuild/run verified; locked Python 3.9/3.11 only; PNG cross-platform byte identity not guaranteed; 14 third-party plotting deprecation warnings.
+Whitespace exception: upstream GPL license files preserve exact downloaded bytes, including trailing blank lines.

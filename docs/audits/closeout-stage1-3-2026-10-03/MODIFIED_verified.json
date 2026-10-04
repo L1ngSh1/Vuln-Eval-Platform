@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_pipeline_cache.py",
+    "tests/python/test_legacy_entrypoints.py",
+    "--runxfail"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-modified-f7qhe4vc",
+  "input": "same 19 frozen mini regressions; corrected env merge",
+  "fixtures_sha256": {
+    "test_legacy_entrypoints.py": "df3e203565ee2ff61b391422b413ed25e126df85b516b03b08871ad9d09e5127",
+    "test_pipeline_cache.py": "d90ab8c3776f2ec6650d27c93a8bb601920969f49479c57a81960ecb070c31e8"
+  },
+  "exit_status": 0,
+  "stdout": "...................                                                      [100%]\n19 passed in 11.67s\n",
+  "stderr": "",
+  "literal_output": "MODIFIED: 19 passed; pytest exit=0",
+  "rollback_action": null,
+  "restored": null
+}

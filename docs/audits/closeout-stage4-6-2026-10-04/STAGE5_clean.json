@@ -1,0 +1,50 @@
+{
+  "commit": "abf664e28d49cfcc4e8a8f9b62a2a929af5d119e",
+  "clean_source": "git archive HEAD; no ignored files copied",
+  "python": "Python 3.9.6",
+  "PATH": "",
+  "network_guard": "import socket\ndef deny(*a, **k):\n    raise RuntimeError(\"network disabled for clean replay verification\")\nsocket.socket.connect = deny\nsocket.create_connection = deny\n",
+  "commands": [
+    {
+      "command": [
+        "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python",
+        "-c",
+        "import socket\ntry: socket.create_connection((\"127.0.0.1\",9))\nexcept RuntimeError as e: print(str(e))"
+      ],
+      "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/clean",
+      "input": "network-denial-probe",
+      "stdout": "network disabled for clean replay verification\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    {
+      "command": [
+        "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python",
+        "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/clean/scripts/evaluation/reproduce_archived_results.py",
+        "--out-dir",
+        "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/replay-clean",
+        "--plots"
+      ],
+      "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/clean",
+      "input": "clean archive with no PATH tools and network disabled",
+      "stdout": "REPLAY PASS: 2 tools x 11 CWEs x 2 FP modes; historical counts unchanged\n",
+      "stderr": "",
+      "exit_status": 0
+    },
+    {
+      "command": [
+        "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python",
+        "-m",
+        "pytest"
+      ],
+      "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/clean",
+      "input": "full clean suite with freshly installed locked dependencies",
+      "stdout": "........................................................................ [ 28%]\n........................................................................ [ 56%]\n........................................................................ [ 84%]\n.........................................                                [100%]\n=============================== warnings summary ===============================\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'\n    prop = Group((name + Suppress(\"=\") + comma_separated(value)) | oneOf(_CONSTANTS))\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n    parse = parser.parseString(pattern)\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'\n    parser.resetCache()\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'\n    ParserElement.enablePackrat()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n257 passed, 14 warnings in 28.48s\n",
+      "stderr": "",
+      "exit_status": 0
+    }
+  ],
+  "dependency_install_command": "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python -m pip install -r requirements.lock",
+  "dependency_install_exit": 0,
+  "dependency_install_stdout": "Collecting PyYAML==6.0.3\n  Downloading pyyaml-6.0.3-cp39-cp39-macosx_11_0_arm64.whl (174 kB)\nCollecting Pygments==2.21.0\n  Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)\nCollecting contourpy==1.3.0\n  Downloading contourpy-1.3.0-cp39-cp39-macosx_11_0_arm64.whl (249 kB)\nCollecting cycler==0.12.1\n  Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)\nCollecting exceptiongroup==1.3.1\n  Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)\nCollecting fonttools==4.60.2\n  Downloading fonttools-4.60.2-cp39-cp39-macosx_10_9_universal2.whl (2.9 MB)\nCollecting importlib_resources==6.5.2\n  Downloading importlib_resources-6.5.2-py3-none-any.whl (37 kB)\nCollecting iniconfig==2.1.0\n  Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)\nCollecting kiwisolver==1.4.7\n  Downloading kiwisolver-1.4.7-cp39-cp39-macosx_11_0_arm64.whl (64 kB)\nCollecting matplotlib==3.9.4\n  Downloading matplotlib-3.9.4-cp39-cp39-macosx_11_0_arm64.whl (7.8 MB)\nCollecting numpy==2.0.2\n  Downloading numpy-2.0.2-cp39-cp39-macosx_14_0_arm64.whl (5.3 MB)\nCollecting packaging==26.2\n  Downloading packaging-26.2-py3-none-any.whl (100 kB)\nCollecting pandas==2.3.3\n  Downloading pandas-2.3.3-cp39-cp39-macosx_11_0_arm64.whl (10.8 MB)\nCollecting pillow==11.3.0\n  Downloading pillow-11.3.0-cp39-cp39-macosx_11_0_arm64.whl (4.7 MB)\nCollecting pluggy==1.6.0\n  Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)\nCollecting pyparsing==3.3.2\n  Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)\nCollecting pytest==8.4.2\n  Downloading pytest-8.4.2-py3-none-any.whl (365 kB)\nCollecting python-dateutil==2.9.0.post0\n  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)\nCollecting pytz==2026.2\n  Downloading pytz-2026.2-py2.py3-none-any.whl (510 kB)\nCollecting seaborn==0.13.2\n  Downloading seaborn-0.13.2-py3-none-any.whl (294 kB)\nCollecting six==1.17.0\n  Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)\nCollecting tomli==2.4.1\n  Downloading tomli-2.4.1-py3-none-any.whl (14 kB)\nCollecting typing_extensions==4.16.0\n  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nCollecting tzdata==2026.2\n  Downloading tzdata-2026.2-py2.py3-none-any.whl (349 kB)\nCollecting zipp==3.23.1\n  Downloading zipp-3.23.1-py3-none-any.whl (10 kB)\nInstalling collected packages: zipp, six, numpy, tzdata, typing-extensions, pytz, python-dateutil, pyparsing, pillow, packaging, kiwisolver, importlib-resources, fonttools, cycler, contourpy, tomli, Pygments, pluggy, pandas, matplotlib, iniconfig, exceptiongroup, seaborn, PyYAML, pytest\nSuccessfully installed PyYAML-6.0.3 Pygments-2.21.0 contourpy-1.3.0 cycler-0.12.1 exceptiongroup-1.3.1 fonttools-4.60.2 importlib-resources-6.5.2 iniconfig-2.1.0 kiwisolver-1.4.7 matplotlib-3.9.4 numpy-2.0.2 packaging-26.2 pandas-2.3.3 pillow-11.3.0 pluggy-1.6.0 pyparsing-3.3.2 pytest-8.4.2 python-dateutil-2.9.0.post0 pytz-2026.2 seaborn-0.13.2 six-1.17.0 tomli-2.4.1 typing-extensions-4.16.0 tzdata-2026.2 zipp-3.23.1\nWARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.\nYou should consider upgrading via the '/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/venv39/bin/python -m pip install --upgrade pip' command.\n"
+}

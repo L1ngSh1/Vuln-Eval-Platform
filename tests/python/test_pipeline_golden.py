@@ -68,7 +68,12 @@ def run_evaluate_aggregate(ws, out_root, skip_existing=True):
 
 def assert_matches_golden(actual: dict, golden_path: Path):
     golden = json.loads(golden_path.read_text(encoding="utf-8"))
-    subset = {key: actual[key] for key in golden if key in actual}
+    # Keep historical goldens intact while checking every old field recursively.
+    def project(value, expected):
+        if isinstance(expected, dict):
+            return {key: project(value[key], child) for key, child in expected.items()}
+        return value
+    subset = project(actual, golden)
     assert subset == golden, f"mismatch vs {golden_path.name}"
 
 
@@ -116,13 +121,12 @@ class TestSkipExisting:
 
         metrics_path = (ws / "experiments" / "cwe-328" / "eval"
                         / "codefuse_eval_v2" / "metrics.json")
-        marker = json.loads(metrics_path.read_text(encoding="utf-8"))
-        marker["__marker__"] = "do-not-overwrite"
-        metrics_path.write_text(json.dumps(marker), encoding="utf-8")
+        before = metrics_path.read_bytes()
+        timestamp = metrics_path.stat().st_mtime_ns
 
         run_evaluate_aggregate(ws, tmp_path / "out", skip_existing=True)
-        preserved = json.loads(metrics_path.read_text(encoding="utf-8"))
-        assert preserved["__marker__"] == "do-not-overwrite"
+        assert metrics_path.read_bytes() == before
+        assert metrics_path.stat().st_mtime_ns == timestamp
 
     def test_no_skip_existing_reevaluates(self, tmp_path):
         ws = build_workspace(tmp_path)

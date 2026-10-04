@@ -1,0 +1,191 @@
+testcase,ruleId,file,line,message
+BenchmarkTest00090,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00090.java,81,Command line is built with string concatenation.
+BenchmarkTest00177,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00177.java,69,Command line is built with string concatenation.
+BenchmarkTest00308,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00308.java,70,Command line is built with string concatenation.
+BenchmarkTest00572,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00572.java,77,Command line is built with string concatenation.
+BenchmarkTest00658,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00658.java,64,Command line is built with string concatenation.
+BenchmarkTest00826,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00826.java,88,Command line is built with string concatenation.
+BenchmarkTest00910,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00910.java,65,Command line is built with string concatenation.
+BenchmarkTest01068,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01068.java,64,Command line is built with string concatenation.
+BenchmarkTest01365,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01365.java,63,Command line is built with string concatenation.
+BenchmarkTest01440,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01440.java,71,Command line is built with string concatenation.
+BenchmarkTest01443,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01443.java,72,Command line is built with string concatenation.
+BenchmarkTest01526,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01526.java,59,Command line is built with string concatenation.
+BenchmarkTest01527,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01527.java,59,Command line is built with string concatenation.
+BenchmarkTest01532,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01532.java,61,Command line is built with string concatenation.
+BenchmarkTest01606,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01606.java,59,Command line is built with string concatenation.
+BenchmarkTest01688,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01688.java,82,Command line is built with string concatenation.
+BenchmarkTest01692,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01692.java,83,Command line is built with string concatenation.
+BenchmarkTest01693,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01693.java,83,Command line is built with string concatenation.
+BenchmarkTest01791,java/concatenated-command-line,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01791.java,58,Command line is built with string concatenation.
+BenchmarkTest00006,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00006.java,66,This command line depends on a [user-provided value](1).
+BenchmarkTest00017,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00017.java,63,This command line depends on a [user-provided value](1).
+BenchmarkTest00015,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00015.java,68,This command line depends on a [user-provided value](1).
+BenchmarkTest00077,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00077.java,98,This command line depends on a [user-provided value](1).
+BenchmarkTest00093,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00093.java,87,This command line depends on a [user-provided value](1).
+BenchmarkTest00159,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00159.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest00176,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00176.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest00171,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00171.java,82,This command line depends on a [user-provided value](1).
+BenchmarkTest00295,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00295.java,72,This command line depends on a [user-provided value](1).
+BenchmarkTest00294,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00294.java,72,This command line depends on a [user-provided value](1).
+BenchmarkTest00302,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00302.java,69,This command line depends on a [user-provided value](1).
+BenchmarkTest00293,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00293.java,76,This command line depends on a [user-provided value](1).
+BenchmarkTest00303,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00303.java,83,This command line depends on a [user-provided value](1).
+BenchmarkTest00310,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00310.java,85,This command line depends on a [user-provided value](1).
+BenchmarkTest00307,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00307.java,75,This command line depends on a [user-provided value](1).
+BenchmarkTest00304,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00304.java,88,This command line depends on a [user-provided value](1).
+BenchmarkTest00409,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00409.java,90,This command line depends on a [user-provided value](1).
+BenchmarkTest00407,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00407.java,81,This command line depends on a [user-provided value](1).
+BenchmarkTest00480,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00480.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest00499,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00499.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest00500,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00500.java,68,This command line depends on a [user-provided value](1).
+BenchmarkTest00494,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00494.java,83,This command line depends on a [user-provided value](1).
+BenchmarkTest00558,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00558.java,84,This command line depends on a [user-provided value](1).
+BenchmarkTest00567,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00567.java,78,This command line depends on a [user-provided value](1).
+BenchmarkTest00568,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00568.java,87,This command line depends on a [user-provided value](1).
+BenchmarkTest00576,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00576.java,75,This command line depends on a [user-provided value](1).
+BenchmarkTest00575,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00575.java,83,This command line depends on a [user-provided value](1).
+BenchmarkTest00659,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00659.java,80,This command line depends on a [user-provided value](1).
+BenchmarkTest00657,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00657.java,65,This command line depends on a [user-provided value](1).
+BenchmarkTest00732,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00732.java,68,This command line depends on a [user-provided value](1).
+BenchmarkTest00731,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00731.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest00742,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00742.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest00741,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00741.java,70,This command line depends on a [user-provided value](1).
+BenchmarkTest00815,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00815.java,86,This command line depends on a [user-provided value](1).
+BenchmarkTest00824,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00824.java,100,This command line depends on a [user-provided value](1).
+BenchmarkTest00816,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00816.java,91,This command line depends on a [user-provided value](1).
+BenchmarkTest00968,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00968.java,79,This command line depends on a [user-provided value](1).
+BenchmarkTest00979,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00979.java,90,This command line depends on a [user-provided value](1).
+BenchmarkTest00981,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00981.java,90,This command line depends on a [user-provided value](1).
+BenchmarkTest01064,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01064.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest01194,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01194.java,65,This command line depends on a [user-provided value](1).
+BenchmarkTest01182,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01182.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest01270,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01270.java,60,This command line depends on a [user-provided value](1).
+BenchmarkTest01285,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01285.java,57,This command line depends on a [user-provided value](1).
+BenchmarkTest01286,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01286.java,69,This command line depends on a [user-provided value](1).
+BenchmarkTest01289,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01289.java,58,This command line depends on a [user-provided value](1).
+BenchmarkTest01360,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01360.java,61,This command line depends on a [user-provided value](1).
+BenchmarkTest01353,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01353.java,66,This command line depends on a [user-provided value](1).
+BenchmarkTest01362,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01362.java,75,This command line depends on a [user-provided value](1).
+BenchmarkTest01430,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01430.java,74,This command line depends on a [user-provided value](1).
+BenchmarkTest01441,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01441.java,83,This command line depends on a [user-provided value](1).
+BenchmarkTest01446,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01446.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest01517,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01517.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest01528,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01528.java,59,This command line depends on a [user-provided value](1).
+BenchmarkTest01530,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01530.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest01607,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01607.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest01609,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01609.java,61,This command line depends on a [user-provided value](1).
+BenchmarkTest01610,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01610.java,61,This command line depends on a [user-provided value](1).
+BenchmarkTest01601,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01601.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest01600,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01600.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest01674,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01674.java,84,This command line depends on a [user-provided value](1).
+BenchmarkTest01685,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01685.java,95,This command line depends on a [user-provided value](1).
+BenchmarkTest01673,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01673.java,84,This command line depends on a [user-provided value](1).
+BenchmarkTest01689,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01689.java,82,This command line depends on a [user-provided value](1).
+BenchmarkTest01852,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01852.java,79,This command line depends on a [user-provided value](1).
+BenchmarkTest01850,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01850.java,79,This command line depends on a [user-provided value](1).
+BenchmarkTest01864,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01864.java,77,This command line depends on a [user-provided value](1).
+BenchmarkTest01865,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01865.java,77,This command line depends on a [user-provided value](1).
+BenchmarkTest01851,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01851.java,79,This command line depends on a [user-provided value](1).
+BenchmarkTest01929,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01929.java,65,This command line depends on a [user-provided value](1).
+BenchmarkTest01936,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01936.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest01937,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01937.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest01938,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01938.java,76,This command line depends on a [user-provided value](1).
+BenchmarkTest01940,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01940.java,63,This command line depends on a [user-provided value](1).
+BenchmarkTest01942,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01942.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest01943,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01943.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest01944,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01944.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest01928,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01928.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest02059,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02059.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest02058,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02058.java,67,This command line depends on a [user-provided value](1).
+BenchmarkTest02069,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02069.java,65,This command line depends on a [user-provided value](1).
+BenchmarkTest02067,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02067.java,78,This command line depends on a [user-provided value](1).
+BenchmarkTest02146,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02146.java,57,This command line depends on a [user-provided value](1).
+BenchmarkTest02147,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02147.java,57,This command line depends on a [user-provided value](1).
+BenchmarkTest02137,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02137.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest02150,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02150.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest02154,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02154.java,59,This command line depends on a [user-provided value](1).
+BenchmarkTest02151,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02151.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest02152,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02152.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest02244,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02244.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest02249,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02249.java,61,This command line depends on a [user-provided value](1).
+BenchmarkTest02243,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02243.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest02250,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02250.java,61,This command line depends on a [user-provided value](1).
+BenchmarkTest02251,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02251.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest02253,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02253.java,75,This command line depends on a [user-provided value](1).
+BenchmarkTest02335,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02335.java,76,This command line depends on a [user-provided value](1).
+BenchmarkTest02340,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02340.java,85,This command line depends on a [user-provided value](1).
+BenchmarkTest02334,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02334.java,76,This command line depends on a [user-provided value](1).
+BenchmarkTest02342,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02342.java,72,This command line depends on a [user-provided value](1).
+BenchmarkTest02343,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02343.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest02333,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02333.java,76,This command line depends on a [user-provided value](1).
+BenchmarkTest02411,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02411.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest02412,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02412.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest02414,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02414.java,62,This command line depends on a [user-provided value](1).
+BenchmarkTest02428,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02428.java,59,This command line depends on a [user-provided value](1).
+BenchmarkTest02430,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02430.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest02429,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02429.java,71,This command line depends on a [user-provided value](1).
+BenchmarkTest02433,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02433.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest02432,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02432.java,73,This command line depends on a [user-provided value](1).
+BenchmarkTest02496,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02496.java,64,This command line depends on a [user-provided value](1).
+BenchmarkTest02611,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02611.java,95,This command line depends on a [user-provided value](1).
+BenchmarkTest02610,java/command-line-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02610.java,95,This command line depends on a [user-provided value](1).
+BenchmarkTest00007,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00007.java,61,This command will be execute with a tainted environment variable.
+BenchmarkTest00091,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00091.java,76,This command will be execute with a tainted environment variable.
+BenchmarkTest00092,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00092.java,95,This command will be execute with a tainted environment variable.
+BenchmarkTest00174,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00174.java,63,This command will be execute with a tainted environment variable.
+BenchmarkTest00172,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00172.java,67,This command will be execute with a tainted environment variable.
+BenchmarkTest00175,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00175.java,67,This command will be execute with a tainted environment variable.
+BenchmarkTest00173,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00173.java,66,This command will be execute with a tainted environment variable.
+BenchmarkTest00311,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00311.java,80,This command will be execute with a tainted environment variable.
+BenchmarkTest00306,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00306.java,69,This command will be execute with a tainted environment variable.
+BenchmarkTest00309,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00309.java,69,This command will be execute with a tainted environment variable.
+BenchmarkTest00410,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00410.java,62,This command will be execute with a tainted environment variable.
+BenchmarkTest00412,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00412.java,64,This command will be execute with a tainted environment variable.
+BenchmarkTest00496,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00496.java,68,This command will be execute with a tainted environment variable.
+BenchmarkTest00495,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00495.java,71,This command will be execute with a tainted environment variable.
+BenchmarkTest00498,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00498.java,68,This command will be execute with a tainted environment variable.
+BenchmarkTest00497,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00497.java,80,This command will be execute with a tainted environment variable.
+BenchmarkTest00573,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00573.java,70,This command will be execute with a tainted environment variable.
+BenchmarkTest00574,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00574.java,75,This command will be execute with a tainted environment variable.
+BenchmarkTest00570,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00570.java,81,This command will be execute with a tainted environment variable.
+BenchmarkTest00743,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00743.java,75,This command will be execute with a tainted environment variable.
+BenchmarkTest00740,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00740.java,64,This command will be execute with a tainted environment variable.
+BenchmarkTest00825,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00825.java,83,This command will be execute with a tainted environment variable.
+BenchmarkTest00823,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00823.java,91,This command will be execute with a tainted environment variable.
+BenchmarkTest00827,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00827.java,88,This command will be execute with a tainted environment variable.
+BenchmarkTest00980,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00980.java,76,This command will be execute with a tainted environment variable.
+BenchmarkTest00983,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00983.java,75,This command will be execute with a tainted environment variable.
+BenchmarkTest00982,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00982.java,76,This command will be execute with a tainted environment variable.
+BenchmarkTest01066,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01066.java,62,This command will be execute with a tainted environment variable.
+BenchmarkTest01067,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01067.java,61,This command will be execute with a tainted environment variable.
+BenchmarkTest01190,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01190.java,64,This command will be execute with a tainted environment variable.
+BenchmarkTest01192,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01192.java,64,This command will be execute with a tainted environment variable.
+BenchmarkTest01191,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01191.java,64,This command will be execute with a tainted environment variable.
+BenchmarkTest01288,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01288.java,57,This command will be execute with a tainted environment variable.
+BenchmarkTest01287,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01287.java,57,This command will be execute with a tainted environment variable.
+BenchmarkTest01361,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01361.java,61,This command will be execute with a tainted environment variable.
+BenchmarkTest01363,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01363.java,60,This command will be execute with a tainted environment variable.
+BenchmarkTest01442,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01442.java,71,This command will be execute with a tainted environment variable.
+BenchmarkTest01444,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01444.java,70,This command will be execute with a tainted environment variable.
+BenchmarkTest01445,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01445.java,70,This command will be execute with a tainted environment variable.
+BenchmarkTest01533,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01533.java,56,This command will be execute with a tainted environment variable.
+BenchmarkTest01531,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01531.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest01608,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01608.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest01690,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01690.java,80,This command will be execute with a tainted environment variable.
+BenchmarkTest01691,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01691.java,80,This command will be execute with a tainted environment variable.
+BenchmarkTest02070,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02070.java,61,This command will be execute with a tainted environment variable.
+BenchmarkTest02155,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02155.java,54,This command will be execute with a tainted environment variable.
+BenchmarkTest02341,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02341.java,71,This command will be execute with a tainted environment variable.
+BenchmarkTest02344,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02344.java,68,This command will be execute with a tainted environment variable.
+BenchmarkTest02431,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02431.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest02511,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02511.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest02512,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02512.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest02515,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02515.java,58,This command will be execute with a tainted environment variable.
+BenchmarkTest02516,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02516.java,56,This command will be execute with a tainted environment variable.
+BenchmarkTest02513,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02513.java,59,This command will be execute with a tainted environment variable.
+BenchmarkTest02514,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02514.java,58,This command will be execute with a tainted environment variable.
+BenchmarkTest02517,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02517.java,56,This command will be execute with a tainted environment variable.
+BenchmarkTest02518,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02518.java,56,This command will be execute with a tainted environment variable.
+BenchmarkTest02613,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02613.java,78,This command will be execute with a tainted environment variable.
+BenchmarkTest02612,java/exec-tainted-environment,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02612.java,81,This command will be execute with a tainted environment variable.

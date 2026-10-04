@@ -1,0 +1,93 @@
+VEP STAGE 1-3 INTERMEDIATE VERIFICATION
+Completion date: 2026-10-04 Asia/Shanghai
+Branch: codex/vep-closeout-stage1-3
+Baseline commit: 34b28feb1c98c64f5d277e8a2bedf6afb675a38d
+Original run_eval.sh SHA256: d9460174376afd5ca6cf87757d34641c5327a8272783e24d088de7263cb6246b
+Modified run_eval.sh SHA256: 4c9a6d4ddf2fbc23b089538b409e4d9e9a1394826ae9f42b11e209c7596f43f3
+Changed branches/fields:
+  evaluation-cache.json: identity.tool/cwe/fp_mode/findings/ground_truth/evaluator; artifacts hashes; atomic completion
+  run-cache.json: identity.context(executable/version/database/libraries)/rules/adapter/standardizer/timeout_seconds; artifacts hashes
+  Manifest.resolve: ordered unique CWE aliases; aggregate_metrics: duplicate CWE rejection; aggregate name: member-set comparison
+  run_eval.sh: SARIF preflight -> private normalization -> pipeline; quick_verify.sh: exact child exit and private output; eval_checker.sh: exec/PYTHON
+Artifacts:
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/MODIFIED_FILE
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/DIFF_FILE.patch
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/VERIFICATION.txt
+/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/ROLLBACK.sh
+
+Identical input for BASELINE/MODIFIED/ROLLBACK: same 19 frozen regressions / committed mini fixtures; env-merge fixture bug corrected in copies only.
+
+BASELINE
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/verify.py --mode baseline
+Input: same 19 frozen mini regressions; corrected env merge
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_pipeline_cache.py tests/python/test_legacy_entrypoints.py --runxfail
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-baseline-titfa27i
+Literal stdout: BASELINE: 19 failed; pytest exit=1
+Command/pytest exit status: 1
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/BASELINE_verified.json
+
+MODIFIED
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/verify.py --mode modified
+Input: same 19 frozen mini regressions; corrected env merge
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_pipeline_cache.py tests/python/test_legacy_entrypoints.py --runxfail
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-modified-f7qhe4vc
+Literal stdout: MODIFIED: 19 passed; pytest exit=0
+Command/pytest exit status: 0
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/MODIFIED_verified.json
+
+ROLLBACK
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/verify.py --mode rollback
+Input: same 19 frozen mini regressions; corrected env merge
+Inner exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_pipeline_cache.py tests/python/test_legacy_entrypoints.py --runxfail
+Inner cwd: /Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-rollback-jqieoxs3
+Literal stdout: ROLLBACK: 19 failed; pytest exit=1; restored=PASS
+Command/pytest exit status: 1
+Raw stdout/stderr: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/ROLLBACK_verified.json
+Rollback exact action command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/ROLLBACK.sh /Users/y4n9/Workspace/Projects/My-github-projects/vep-closeout-rollback-jqieoxs3
+Rollback action literal stdout: ROLLBACK_ACTION: original hashes/modes restored; pipeline_cache.py removed; exit=0
+Rollback action exit status: 0
+Restored product hashes/modes: PASS; pipeline_cache.py absent; original regression failures restored.
+Restored suite exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest
+Restored suite literal result: 156 passed, 19 xfailed in 3.28s
+Restored suite exit status: 0
+
+STAGE3
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest tests/python/test_legacy_entrypoints.py
+Input: real wrappers incl positive SARIF TP/FP/FN, bad inputs, exact exit codes and concurrent cleanup
+Literal result: 18 passed in 14.66s
+Exit status: 0
+Raw record: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/STAGE3_targeted.json
+
+FULL
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest
+Input: all 215 tests on final product/test files
+Literal result: 215 passed in 24.99s
+Exit status: 0
+Raw record: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/MODIFIED_suite.json
+
+CLEAN_PATCH
+Exact command: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python -m pytest
+Input: 34b28fe tracked-only snapshot + final DIFF_FILE.patch; preinstalled runtime, no ignored results/database
+Literal result: 215 passed in 24.87s
+Exit status: 0
+Raw record: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/CLEAN_PATCH_suite.json
+
+SHELL_SYNTAX
+Exact command: bash -n run_eval.sh scripts/quick_verify.sh scripts/evaluation/eval_checker.sh /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/ROLLBACK.sh
+Input: Bash parser validation of all modified shell scripts
+Literal result: PASS (empty stdout/stderr)
+Exit status: 0
+Raw record: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/SHELL_syntax.json
+
+DIFF_CHECK
+Exact command: git diff --check
+Input: current stage3 diff whitespace/integrity
+Literal result: PASS (empty stdout/stderr)
+Exit status: 0
+Raw record: /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/DIFF_check.json
+
+Historical hashes: PASS (all baseline-manifest preserved_evidence and originals unchanged).
+Scope: stopped after intermediate acceptance; no publication, no remote operations, no repository archival.
+Remaining: stages 4-6; real analyzer/rule regression and platform claims unverified; clean tests use preinstalled dependencies; quick_verify historical input requirements remain.
+Frozen legacy fixture calibration: historical failures remain unchanged; three env-merge errors superseded by valid 19-regression reproduction.
+Current working product files and MODIFIED_FILE remain changed; rollback tested only in another copy.

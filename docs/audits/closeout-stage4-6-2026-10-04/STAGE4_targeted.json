@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_metric_contract.py",
+    "tests/python/test_metrics.py",
+    "tests/python/test_aggregate.py",
+    "tests/python/test_evaluator.py",
+    "tests/python/test_ground_truth.py",
+    "tests/python/test_pipeline_golden.py",
+    "tests/python/test_pipeline_reporting.py"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "final stage4 contract including real CLI and unknown-population rejection",
+  "exit_status": 0,
+  "stdout": "....................................................................     [100%]\n=============================== warnings summary ===============================\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'\n    prop = Group((name + Suppress(\"=\") + comma_separated(value)) | oneOf(_CONSTANTS))\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'\n    parse = parser.parseString(pattern)\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'\n    parser.resetCache()\n\ntests/python/test_metric_contract.py::test_charts_disclose_selected_mode_and_population\n  /Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/lib/python3.9/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'\n    ParserElement.enablePackrat()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n68 passed, 14 warnings in 1.10s\n",
+  "stderr": ""
+}

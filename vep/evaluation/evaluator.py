@@ -8,6 +8,7 @@ from typing import List, Tuple
 
 from vep.core.models import Finding, ExpectedCase, EvalResult, EvaluationDetails
 from vep.core.normalization import normalize_testcase_id
+from vep.evaluation.contract import sample_scope, standard_fpr
 
 
 def evaluate_findings(
@@ -67,6 +68,9 @@ def evaluate_findings_with_details(
     Returns:
         Tuple of (EvalResult, EvaluationDetails)
     """
+    if fp_mode not in ("all_non_gt", "in_scope"):
+        raise ValueError(f"Unknown FP mode: {fp_mode}")
+    population = sample_scope(expected_cases, cwe)
     # Deduplicate findings by testcase (keep first occurrence)
     testcase_to_finding = {}
     for finding in findings:
@@ -213,7 +217,9 @@ def evaluate_findings_with_details(
         fp_in_scope=fp_in_scope,
         fp_all_non_gt=fp_all_non_gt,
         fp_mode=fp_mode,
-        schema_version="vep.eval.v2"
+        schema_version="vep.eval.v2",
+        fpr_in_scope=standard_fpr(fp_in_scope, tn),
+        sample_scope=population,
     )
 
     details = EvaluationDetails(

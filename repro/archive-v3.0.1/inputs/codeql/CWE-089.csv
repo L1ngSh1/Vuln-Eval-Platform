@@ -1,0 +1,480 @@
+testcase,ruleId,file,line,message
+BenchmarkTest00105,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00105.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00107,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00107.java,93,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00114,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00114.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00110,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00110.java,93,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00206,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00206.java,79,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00202,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00202.java,79,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00333,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00333.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00336,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00336.java,66,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00338,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00338.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00343,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00343.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00332,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00332.java,81,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00344,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00344.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00334,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00334.java,83,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00430,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00430.java,60,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00437,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00437.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00436,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00436.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00514,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00514.java,62,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00517,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00517.java,62,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00601,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00601.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00605,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00605.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00592,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00592.java,90,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00675,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00675.java,61,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00676,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00676.java,61,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00674,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00674.java,78,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00766,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00766.java,61,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00851,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00851.java,82,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00925,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00925.java,56,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00928,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00928.java,60,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00929,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00929.java,75,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00932,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00932.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00933,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00933.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00934,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00934.java,74,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00935,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00935.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00937,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00937.java,73,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00938,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00938.java,61,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00927,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00927.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00939,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00939.java,73,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00926,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00926.java,64,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00931,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00931.java,62,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00940,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00940.java,64,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01001,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01001.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01086,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01086.java,56,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01092,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01092.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01095,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01095.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01213,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01213.java,61,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01217,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01217.java,60,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01220,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01220.java,60,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01218,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01218.java,60,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01305,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01305.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01307,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01307.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01309,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01309.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01315,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01315.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01387,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01387.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01393,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01393.java,57,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01392,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01392.java,57,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01468,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01468.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01469,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01469.java,65,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01472,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01472.java,67,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01629,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01629.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01732,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01732.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01804,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01804.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01805,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01805.java,56,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01809,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01809.java,52,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01810,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01810.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01808,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01808.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01811,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01811.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01812,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01812.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01813,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01813.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01814,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01814.java,52,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01815,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01815.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01818,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01818.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01819,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01819.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01820,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01820.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01817,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01817.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01816,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01816.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01878,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01878.java,73,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01886,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01886.java,72,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01961,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01961.java,59,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01965,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01965.java,59,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01966,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01966.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest01969,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01969.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02089,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02089.java,62,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02172,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02172.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02176,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02176.java,51,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02183,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02183.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02188,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02188.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02271,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02271.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02279,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02279.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02276,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02276.java,58,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02285,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02285.java,57,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02353,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02353.java,68,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02361,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02361.java,67,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02366,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02366.java,67,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02367,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02367.java,67,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02368,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02368.java,67,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02450,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02450.java,56,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02452,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02452.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02456,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02456.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02539,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02539.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02538,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02538.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02541,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02541.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02631,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02631.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02633,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02633.java,78,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02639,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02639.java,75,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02637,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02637.java,78,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02652,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02652.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02657,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02657.java,77,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02727,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02727.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02728,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02728.java,56,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02729,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02729.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02730,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02730.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02733,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02733.java,52,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02732,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02732.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02735,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02735.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02734,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02734.java,55,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02736,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02736.java,53,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02737,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02737.java,52,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02740,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02740.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02739,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02739.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest02738,java/concatenated-sql-query,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02738.java,54,"Query built by concatenation with [this expression](1), which may be untrusted."
+BenchmarkTest00194,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00194.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00200,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00200.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest00340,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00340.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00341,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00341.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00434,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00434.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest00511,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00511.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00600,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00600.java,84,This query depends on a [user-provided value](1).
+BenchmarkTest00769,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00769.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest00840,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00840.java,80,This query depends on a [user-provided value](1).
+BenchmarkTest00841,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00841.java,94,This query depends on a [user-provided value](1).
+BenchmarkTest00846,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00846.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01005,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01005.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01010,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01010.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01214,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01214.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01471,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01471.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest01624,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01624.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01727,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01727.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01881,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01881.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01963,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01963.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest01968,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01968.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest02273,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02273.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02272,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02272.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02536,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02536.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02537,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02537.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02638,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02638.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02646,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02646.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest00008,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest00018,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00018.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest00025,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00025.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest00027,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00027.java,52,This query depends on a [user-provided value](1).
+BenchmarkTest00024,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00024.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest00026,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00026.java,50,This query depends on a [user-provided value](1).
+BenchmarkTest00032,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00032.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest00038,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00038.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00033,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00033.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest00039,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00039.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00037,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00037.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest00043,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00043.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest00034,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00034.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest00103,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00103.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00102,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00102.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest00108,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00108.java,91,This query depends on a [user-provided value](1).
+BenchmarkTest00101,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00101.java,83,This query depends on a [user-provided value](1).
+BenchmarkTest00106,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00106.java,82,This query depends on a [user-provided value](1).
+BenchmarkTest00100,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00100.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest00112,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00112.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00109,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00109.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest00111,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00111.java,82,This query depends on a [user-provided value](1).
+BenchmarkTest00113,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00113.java,78,This query depends on a [user-provided value](1).
+BenchmarkTest00115,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00115.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00191,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00191.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest00192,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00192.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00195,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00195.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00198,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00198.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00199,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00199.java,64,This query depends on a [user-provided value](1).
+BenchmarkTest00196,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00196.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00193,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00193.java,64,This query depends on a [user-provided value](1).
+BenchmarkTest00190,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00190.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest00203,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00203.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00204,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00204.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest00197,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00197.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest00205,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00205.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest00328,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00328.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00335,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00335.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest00339,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00339.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00331,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00331.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest00337,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00337.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest00342,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00342.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest00429,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00429.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest00431,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00431.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest00433,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00433.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest00438,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00438.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest00439,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00439.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest00428,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00428.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00441,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00441.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest00432,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00432.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00440,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00440.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest00435,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00435.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest00510,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00510.java,78,This query depends on a [user-provided value](1).
+BenchmarkTest00512,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00512.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest00509,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00509.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00516,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00516.java,76,This query depends on a [user-provided value](1).
+BenchmarkTest00513,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00513.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00518,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00518.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest00515,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00515.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest00519,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00519.java,63,This query depends on a [user-provided value](1).
+BenchmarkTest00590,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00590.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00591,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00591.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest00593,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00593.java,88,This query depends on a [user-provided value](1).
+BenchmarkTest00595,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00595.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest00597,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00597.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest00598,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00598.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest00604,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00604.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00589,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00589.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest00603,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00603.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest00594,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00594.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest00606,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00606.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest00596,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00596.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest00602,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00602.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00673,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00673.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest00677,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00677.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00679,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00679.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest00678,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00678.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00681,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00681.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest00682,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00682.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00680,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00680.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest00762,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00762.java,62,This query depends on a [user-provided value](1).
+BenchmarkTest00763,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00763.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest00761,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00761.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00764,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00764.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest00767,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00767.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest00765,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00765.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest00768,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00768.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest00772,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00772.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00774,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00774.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest00773,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00773.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00760,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00760.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest00770,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00770.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest00771,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00771.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest00839,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00839.java,83,This query depends on a [user-provided value](1).
+BenchmarkTest00838,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00838.java,98,This query depends on a [user-provided value](1).
+BenchmarkTest00845,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00845.java,80,This query depends on a [user-provided value](1).
+BenchmarkTest00848,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00848.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest00837,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00837.java,85,This query depends on a [user-provided value](1).
+BenchmarkTest00843,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00843.java,83,This query depends on a [user-provided value](1).
+BenchmarkTest00847,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00847.java,87,This query depends on a [user-provided value](1).
+BenchmarkTest00842,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00842.java,88,This query depends on a [user-provided value](1).
+BenchmarkTest00844,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00844.java,87,This query depends on a [user-provided value](1).
+BenchmarkTest00849,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00849.java,87,This query depends on a [user-provided value](1).
+BenchmarkTest00850,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00850.java,87,This query depends on a [user-provided value](1).
+BenchmarkTest00996,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00996.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest00998,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00998.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest00997,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00997.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01000,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01000.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01002,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01002.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest01003,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01003.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest01004,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01004.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest01007,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01007.java,71,This query depends on a [user-provided value](1).
+BenchmarkTest01008,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01008.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01009,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01009.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01006,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01006.java,73,This query depends on a [user-provided value](1).
+BenchmarkTest01011,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01011.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01012,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01012.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01083,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01083.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest01085,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01085.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest01087,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01087.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01088,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01088.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01093,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01093.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01094,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01094.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01084,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01084.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01089,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01089.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01096,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01096.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01090,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01090.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01091,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01091.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01097,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01097.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01098,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01098.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01209,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01209.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest01211,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01211.java,62,This query depends on a [user-provided value](1).
+BenchmarkTest01210,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01210.java,62,This query depends on a [user-provided value](1).
+BenchmarkTest01212,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01212.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest01208,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01208.java,62,This query depends on a [user-provided value](1).
+BenchmarkTest01216,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01216.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest01215,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01215.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest01219,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01219.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest01221,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01221.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest01222,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01222.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest01303,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01303.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest01304,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01304.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01302,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01302.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01306,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01306.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest01308,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01308.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest01311,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01311.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01314,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01314.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01310,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01310.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01313,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01313.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01312,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01312.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01379,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01379.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01383,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01383.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01381,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01381.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01382,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01382.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01384,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01384.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01385,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01385.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01386,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01386.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01389,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01389.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01388,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01388.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01391,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01391.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01394,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01394.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01390,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01390.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01395,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01395.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01396,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01396.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01460,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01460.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest01459,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01459.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01462,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01462.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest01464,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01464.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest01463,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01463.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest01461,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01461.java,69,This query depends on a [user-provided value](1).
+BenchmarkTest01465,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01465.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest01466,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01466.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest01467,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01467.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest01473,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01473.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01475,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01475.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01474,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01474.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01470,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01470.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest01477,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01477.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01476,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01476.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest01552,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01552.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01553,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01553.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01554,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01554.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest01555,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01555.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest01557,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01557.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01556,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01556.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest01559,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01559.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01558,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01558.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01560,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01560.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01620,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01620.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01621,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01621.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01622,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01622.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01623,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01623.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01625,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01625.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest01626,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01626.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01627,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01627.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01628,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01628.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01630,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01630.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01631,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01631.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest01712,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01712.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01713,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01713.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01715,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01715.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest01717,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01717.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest01718,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01718.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest01719,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01719.java,78,This query depends on a [user-provided value](1).
+BenchmarkTest01716,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01716.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest01720,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01720.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01722,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01722.java,76,This query depends on a [user-provided value](1).
+BenchmarkTest01723,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01723.java,78,This query depends on a [user-provided value](1).
+BenchmarkTest01724,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01724.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01721,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01721.java,76,This query depends on a [user-provided value](1).
+BenchmarkTest01725,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01725.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01726,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01726.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01728,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01728.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01729,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01729.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01731,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01731.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01730,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01730.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01733,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01733.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest01877,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01877.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest01879,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01879.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest01880,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01880.java,74,This query depends on a [user-provided value](1).
+BenchmarkTest01883,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01883.java,70,This query depends on a [user-provided value](1).
+BenchmarkTest01885,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01885.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01882,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01882.java,71,This query depends on a [user-provided value](1).
+BenchmarkTest01887,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01887.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01888,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01888.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01889,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01889.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01890,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01890.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01891,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01891.java,72,This query depends on a [user-provided value](1).
+BenchmarkTest01962,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01962.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest01964,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01964.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest01967,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01967.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01971,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01971.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01970,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01970.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01972,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01972.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest01973,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01973.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest02087,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02087.java,61,This query depends on a [user-provided value](1).
+BenchmarkTest02090,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02090.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest02088,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02088.java,62,This query depends on a [user-provided value](1).
+BenchmarkTest02091,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02091.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02093,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02093.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02092,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02092.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02094,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02094.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02096,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02096.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02095,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02095.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02097,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02097.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02099,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02099.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02098,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02098.java,60,This query depends on a [user-provided value](1).
+BenchmarkTest02170,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02170.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02169,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02169.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02171,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02171.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02173,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02173.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02179,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02179.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest02178,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02178.java,51,This query depends on a [user-provided value](1).
+BenchmarkTest02180,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02180.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest02182,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02182.java,52,This query depends on a [user-provided value](1).
+BenchmarkTest02175,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02175.java,51,This query depends on a [user-provided value](1).
+BenchmarkTest02177,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02177.java,52,This query depends on a [user-provided value](1).
+BenchmarkTest02181,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02181.java,52,This query depends on a [user-provided value](1).
+BenchmarkTest02184,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02184.java,51,This query depends on a [user-provided value](1).
+BenchmarkTest02185,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02185.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02187,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02187.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02186,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02186.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02265,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02265.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02266,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02266.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02264,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02264.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02267,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02267.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02268,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02268.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02270,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02270.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02269,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02269.java,59,This query depends on a [user-provided value](1).
+BenchmarkTest02274,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02274.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest02275,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02275.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest02281,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02281.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest02280,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02280.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest02283,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02283.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02278,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02278.java,58,This query depends on a [user-provided value](1).
+BenchmarkTest02277,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02277.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02287,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02287.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02284,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02284.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02286,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02286.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02288,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02288.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02354,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02354.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest02356,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02356.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest02357,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02357.java,66,This query depends on a [user-provided value](1).
+BenchmarkTest02355,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02355.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest02358,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02358.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest02359,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02359.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest02360,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02360.java,68,This query depends on a [user-provided value](1).
+BenchmarkTest02362,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02362.java,65,This query depends on a [user-provided value](1).
+BenchmarkTest02365,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02365.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest02364,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02364.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest02369,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02369.java,67,This query depends on a [user-provided value](1).
+BenchmarkTest02449,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02449.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02451,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02451.java,53,This query depends on a [user-provided value](1).
+BenchmarkTest02454,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02454.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02455,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02455.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02453,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02453.java,54,This query depends on a [user-provided value](1).
+BenchmarkTest02528,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02528.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02529,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02529.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02530,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02530.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02533,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02533.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02534,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02534.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02532,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02532.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02535,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02535.java,57,This query depends on a [user-provided value](1).
+BenchmarkTest02531,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02531.java,56,This query depends on a [user-provided value](1).
+BenchmarkTest02542,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02542.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02545,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02545.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02543,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02543.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02546,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02546.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02544,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02544.java,55,This query depends on a [user-provided value](1).
+BenchmarkTest02625,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02625.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02627,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02627.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02628,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02628.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02629,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02629.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02630,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02630.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02632,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02632.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02634,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02634.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02635,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02635.java,79,This query depends on a [user-provided value](1).
+BenchmarkTest02636,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02636.java,78,This query depends on a [user-provided value](1).
+BenchmarkTest02640,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02640.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02641,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02641.java,76,This query depends on a [user-provided value](1).
+BenchmarkTest02643,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02643.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02642,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02642.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02644,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02644.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02645,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02645.java,75,This query depends on a [user-provided value](1).
+BenchmarkTest02647,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02647.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02648,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02648.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02651,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02651.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02650,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02650.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02649,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02649.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02656,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02656.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02653,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02653.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02655,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02655.java,77,This query depends on a [user-provided value](1).
+BenchmarkTest02654,java/sql-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02654.java,77,This query depends on a [user-provided value](1).

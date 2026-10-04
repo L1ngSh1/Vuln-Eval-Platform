@@ -3,7 +3,7 @@
 
 [👉 点击这里查看中文版本 (Chinese Version)](docs/README_zh-CN.md)
 
-![License](https://img.shields.io/badge/license-MIT-green)
+![License](https://img.shields.io/badge/license-MIT%20%2B%20third--party-green)
 ![OWASP](https://img.shields.io/badge/OWASP-Benchmark-important)
 ![Created by L1ngSh1](https://img.shields.io/badge/Created%20by-L1ngSh1-purple)
 
@@ -31,7 +31,16 @@ providing an engineered, scalable platform for vulnerability detection evaluatio
 
 ## 🆕 Release Notes
 
-### v3.0.0 (Current Version)
+### v3.0.1 (Final Closeout)
+
+- Fixed cache identity/completeness, duplicate CWE totals and legacy exit/SARIF/temp-file paths.
+- Added explicit sample identities, both FP modes, standard `fpr_in_scope` and compatible report merging.
+- Committed both tools' normalized archive inputs, GT, hashes and locked dependencies.
+- Final reproducibility guarantee: **offline replay of archived results**, not cross-platform analyzer/database rebuilding.
+- See [offline replay](docs/guides/offline_replay.md), [metric contract](docs/guides/metric_contract.md), [known limits / archive gates](docs/ARCHIVE.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
+- Publishing and making GitHub read-only are separate actions; archival requires a final explicit confirmation.
+
+### v3.0.0 (Previous Release)
 
 - Unified CodeFuse-Query and CodeQL execution under `scripts/evaluation/run_pipeline.py`.
 - Added automatic tool discovery and the CodeFuse `JAVA_HOME` environment gate.
@@ -142,6 +151,32 @@ For more details, see the [evaluation workflow](docs/guides/evaluation_workflow.
 
 ---
 
+## ✅ Reproduce the Final Archive
+
+```bash
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements.lock
+.venv/bin/python scripts/evaluation/reproduce_archived_results.py --out-dir /tmp/vep-replay --plots
+```
+
+After dependency installation, replay needs no network, analyzer binary, ignored input or analysis database.
+Both modes use the same retained findings and GT, with no silent FP filtering.
+
+| Tool | all_non_gt P / R / F1 | in_scope P / R / F1 | Outside scope | fpr_in_scope |
+|---|---|---|---:|---:|
+| CodeFuse-Query | 0.7194 / 1.0000 / 0.8368 | 0.7194 / 1.0000 / 0.8368 | 0 | 0.4166 |
+| CodeQL | 0.3876 / 1.0000 / 0.5586 | 0.7271 / 1.0000 / 0.8420 | 1705 | 0.4008 |
+
+Unit: normalized testcase per CWE, summed over the fixed 11 CWE populations.
+The old all_non_gt `fpr` (0.4166 / 0.7380) remains a **custom** ratio; it is not standard FPR.
+These benchmark-specific results do not establish real-world ranking or zero missed vulnerabilities.
+
+## Historical Analyzer Setup (Reference Only)
+
+The following build/run commands are retained from earlier releases. This closeout
+has not revalidated fixed-version database rebuilding or analyzer execution;
+platforms and historical version gaps are listed in [known limits](docs/ARCHIVE.md).
+
 ## 🔧 Install CodeQL
 
 Refer to the official release page:
@@ -201,9 +236,9 @@ is elsewhere, set `DB_CODEFUSE` to its absolute path.
 ### Python environment
 
 ```bash
-python3 -m venv .venv
+python3.11 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.lock
 ```
 
 ### Run the evaluation
@@ -279,7 +314,7 @@ Each CWE experiment uniformly follows these steps:
 
 # 📊 Evaluation Metrics
 
-This project uses a standard vulnerability detection evaluation metric system:
+The selected `fp_mode` and GT/sample identity are part of every new report. Standard and legacy/custom metrics are distinguished:
 
 | Metric    | Meaning                                  |
 | --------- | ---------------------------------------- |
@@ -289,7 +324,8 @@ This project uses a standard vulnerability detection evaluation metric system:
 | Precision | Detection Precision                      |
 | Recall    | Vulnerability Recall                     |
 | FNR       | False Negative Rate                      |
-| FPR       | False Positive Rate                      |
+| fpr_in_scope | FP_in_scope / (FP_in_scope + TN_in_scope); null if undefined |
+| fpr (legacy all_non_gt) | Custom FP_all_non_gt / (FP_all_non_gt + TN_in_scope), not standard FPR |
 | FDR       | False Discovery Rate                     |
 
 ---
@@ -331,26 +367,24 @@ python scripts/verify_manifest.py
 python -m pytest
 ```
 
-The current suite contains 156 tests. GitHub Actions runs compile, manifest,
-and pytest checks on Python 3.9 and 3.11. Golden fixtures protect the CWE-328
+The closeout suite contains 257 tests. GitHub Actions runs compile, manifest,
+pytest and committed offline replay checks on Python 3.9 and 3.11 with locked dependencies. Golden fixtures protect the CWE-328
 `328S` ground-truth behavior.
 
 ---
 
-# 🚧 Future Plans
+# 📦 Closeout and Archive
 
-* Reduce false positives while preserving the current zero-FN baseline
-* Add more CWE checkers and static analysis tool adapters
-* Validate the full CodeFuse workflow on Linux
-* Explore path-, field-, and context-sensitive precision improvements
+Feature development ends with this closeout. New CWEs, tools, UI, large taint
+refactors and zero-FP rule expansion are not part of the final release.
+[Archive gates and known limits](docs/ARCHIVE.md) define the final checks.
+GitHub archival is the last, separately confirmed action.
 
 ---
 
 # 📄 License
 
-This project is released under the MIT Open Source License.
-You are free to use, modify, and distribute this project under the terms of the license.
-Please see the [LICENSE](LICENSE) file for complete license contents.
+VEP-authored platform code is MIT licensed. Vendored OWASP Benchmark content remains GPL-2.0; CodeQL sources and bundled web assets retain their upstream terms. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md).
 
 ---
 
@@ -368,6 +402,6 @@ The goal of Vuln-Eval-Platform is to build a structured, extensible, and reprodu
 
 This project is both a platform for research experiments and a record of the author's exploration in security research and engineering practices.
 
-The project is still continuously evolving. Researchers interested in static analysis and vulnerability detection are welcome to participate in improving it, proposing suggestions, or contributing rules.
+The final snapshot preserves experiments and reproducible evidence for research and teaching. Further research can continue in a separately maintained fork.
 
 It would be a great comfort to the author if this project could be helpful in security research or teaching.

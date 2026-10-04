@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "scripts/evaluation/reproduce_archived_results.py",
+    "--out-dir",
+    "/Users/y4n9/Workspace/Projects/My-github-projects/VEP-closeout-verification-2026-10-04/replay-final",
+    "--plots"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "final stage4-6 source and committed replay inputs",
+  "stdout": "REPLAY PASS: 2 tools x 11 CWEs x 2 FP modes; historical counts unchanged\n",
+  "stderr": "",
+  "exit_status": 0
+}

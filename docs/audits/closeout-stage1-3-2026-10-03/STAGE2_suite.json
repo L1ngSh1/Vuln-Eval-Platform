@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "real pipeline / adapters with mini fixtures and versioned fake analyzers",
+  "stdout": "...................................................................xxxxx [ 35%]\n........................................................................ [ 71%]\n..........................................................               [100%]\n197 passed, 5 xfailed in 6.24s\n",
+  "stderr": "",
+  "exit_status": 0
+}

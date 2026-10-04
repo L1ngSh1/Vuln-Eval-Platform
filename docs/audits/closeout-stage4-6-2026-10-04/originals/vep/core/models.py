@@ -65,7 +65,7 @@ class EvalResult:
         recall: TP / (TP + FN)
         f1: F1 score
         fnr: False negative rate (FN / (TP + FN))
-        fpr: Legacy selected-FP rate; custom when FP includes out-of-scope findings
+        fpr: False positive rate (FP / (FP + TN))
         fdr: False discovery rate (FP / (TP + FP))
         total_findings: Total number of findings (before deduplication)
         dedup_findings: Unique testcases detected
@@ -102,8 +102,6 @@ class EvalResult:
     fp_all_non_gt: int
     fp_mode: str = "all_non_gt"
     schema_version: str = "vep.eval.v2"
-    fpr_in_scope: Optional[float] = None
-    sample_scope: dict = field(default_factory=dict)
 
 
 @dataclass

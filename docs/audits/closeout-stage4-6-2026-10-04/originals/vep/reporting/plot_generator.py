@@ -76,9 +76,6 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     generated: List[Path] = []
-    fingerprint = report.sample_scope.get("dataset_sha256")
-    label = (f"fp_mode={report.fp_mode}; scope={fingerprint[:12] if fingerprint else 'unverified'}\n"
-             f"unit={report.sample_scope.get('unit', 'unknown')}")
 
     cwes = _sorted_cwes(report)
     tools = report.tools
@@ -125,7 +122,7 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
         ax.set_xticks(x)
         ax.set_xticklabels(cwes, rotation=45, ha="right")
         ax.set_ylim(0, 1.12)
-        ax.set_title(f"{metric_label}\n{label}", fontsize=10, weight="bold")
+        ax.set_title(metric_label, fontsize=13, weight="bold")
         ax.legend(fontsize=9)
 
     fig.suptitle("Performance by CWE", fontsize=15, weight="bold", y=1.02)
@@ -161,8 +158,8 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
         ax.set_xticks(x)
         ax.set_xticklabels(cwes, rotation=45, ha="right")
         ax.set_title(
-            f"Detection Counts — {tool_display_name(tool)}\n{label}",
-            fontsize=10,
+            f"Detection Counts — {tool_display_name(tool)}",
+            fontsize=13,
             weight="bold",
         )
         ax.legend()
@@ -212,7 +209,7 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
     ax.set_ylim(0, 1.12)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    ax.set_title(f"Overall Performance\n{label}", fontsize=10, weight="bold", pad=15)
+    ax.set_title("Overall Performance", fontsize=15, weight="bold", pad=15)
     ax.legend(fontsize=11)
 
     plt.tight_layout()
@@ -253,7 +250,7 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
                 )
 
         ax.set_ylim(0, 1.12)
-        ax.set_title(f"Precision Comparison by CWE\n{label}", fontsize=10, weight="bold")
+        ax.set_title("Precision Comparison by CWE", fontsize=14, weight="bold")
         ax.legend(fontsize=11)
         ax.grid(True, alpha=0.3)
         plt.xticks(rotation=45, ha="right")
@@ -263,26 +260,4 @@ def generate_all_plots(report: ReportData, out_dir: Path) -> List[Path]:
         plt.close(fig)
         generated.append(p)
 
-    # Explicitly compare both definitions from the same retained findings.
-    available = [(tool, mode, tm.metric_modes.get(mode))
-                 for tool, tm in report.overall.items()
-                 for mode in ("all_non_gt", "in_scope") if tm.metric_modes.get(mode) is not None]
-    if available:
-        fig, ax = plt.subplots(figsize=(14, 6))
-        x = np.arange(3)
-        width = 0.8 / len(available)
-        for i, (tool, mode, values) in enumerate(available):
-            offset = (i - (len(available) - 1) / 2) * width
-            ax.bar(x + offset, [values[k] for k in ("precision", "recall", "f1")], width,
-                   label=f"{tool_display_name(tool)} / {mode}")
-        ax.set_xticks(x)
-        ax.set_xticklabels(["Precision", "Recall", "F1"])
-        ax.set_ylim(0, 1.12)
-        ax.set_title(f"Both FP definitions (same retained findings)\n{label}", fontsize=10)
-        ax.legend()
-        plt.tight_layout()
-        p = out_dir / "metric_modes_comparison.png"
-        fig.savefig(p, bbox_inches="tight")
-        plt.close(fig)
-        generated.append(p)
     return generated

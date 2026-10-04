@@ -1,0 +1,391 @@
+{
+  "rows": [
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-022",
+      "source": "reports/data/mac-fixed-validation/cwe-022/results/cwe022_codefuse.csv",
+      "sha256": "7b8b83ed7154e732012695205f4be2008806d9d58d7e0190ce3a7a392a095fa2",
+      "counts": {
+        "tp": 133,
+        "fp": 108,
+        "fn": 0,
+        "tn": 27,
+        "fp_in_scope": 108,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-078",
+      "source": "reports/data/mac-fixed-validation/cwe-078/results/cwe078_codefuse.csv",
+      "sha256": "48497b55ee8963e5128f1a7708c5f587bce4fdfa3a3eee8baf6dd5e43871fb5a",
+      "counts": {
+        "tp": 126,
+        "fp": 97,
+        "fn": 0,
+        "tn": 28,
+        "fp_in_scope": 97,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-079",
+      "source": "reports/data/mac-fixed-validation/cwe-079/results/cwe079_codefuse.csv",
+      "sha256": "4408b70e7003f13599f9cffb914e33384bd7b3c364efa074c87adc4b111b1912",
+      "counts": {
+        "tp": 246,
+        "fp": 96,
+        "fn": 0,
+        "tn": 113,
+        "fp_in_scope": 96,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-089",
+      "source": "reports/data/mac-fixed-validation/cwe-089/results/cwe089_codefuse.csv",
+      "sha256": "6e193eb79557365557cca7f9ee62750bcb7d0ae7809b17526fc43201cca94e34",
+      "counts": {
+        "tp": 272,
+        "fp": 150,
+        "fn": 0,
+        "tn": 82,
+        "fp_in_scope": 150,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-090",
+      "source": "reports/data/mac-fixed-validation/cwe-090/results/cwe090_codefuse.csv",
+      "sha256": "5d38023fa503b76457ea308dd431c0dc96d5c7146d48eb7e3cce6558d75028b5",
+      "counts": {
+        "tp": 27,
+        "fp": 22,
+        "fn": 0,
+        "tn": 10,
+        "fp_in_scope": 22,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-327",
+      "source": "reports/data/mac-fixed-validation/cwe-327/results/cwe327_codefuse.csv",
+      "sha256": "bb16486d60ca46a8330eeb97bc056a189fbf842a29cf581c67c424b13dabb22c",
+      "counts": {
+        "tp": 130,
+        "fp": 27,
+        "fn": 0,
+        "tn": 89,
+        "fp_in_scope": 27,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-328",
+      "source": "reports/data/mac-fixed-validation/cwe-328/results/cwe328_codefuse.csv",
+      "sha256": "b8b6632fe23d0ff9db409615e02467dd31bb8b7a97af4abf4b9576c3dc975ef5",
+      "counts": {
+        "tp": 129,
+        "fp": 0,
+        "fn": 0,
+        "tn": 107,
+        "fp_in_scope": 0,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-330",
+      "source": "reports/data/mac-fixed-validation/cwe-330/results/cwe330_codefuse.csv",
+      "sha256": "b08e16b71f541fc32400e006474855633a4b16a7fef7ecf7a164d164a0a578d2",
+      "counts": {
+        "tp": 218,
+        "fp": 0,
+        "fn": 0,
+        "tn": 275,
+        "fp_in_scope": 0,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-501",
+      "source": "reports/data/mac-fixed-validation/cwe-501/results/cwe501_codefuse.csv",
+      "sha256": "db374616fda76283b39eb5f5040e7cea55023944283c48e8f13d7af13327b181",
+      "counts": {
+        "tp": 83,
+        "fp": 34,
+        "fn": 0,
+        "tn": 9,
+        "fp_in_scope": 34,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-614",
+      "source": "reports/data/mac-fixed-validation/cwe-614/results/cwe614_codefuse.csv",
+      "sha256": "f5e3040e732d723dbdfaa1dadbd298529a97764f5f0a22e6537ab4d3886fc09f",
+      "counts": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "tn": 31,
+        "fp_in_scope": 0,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codefuse",
+      "cwe": "CWE-643",
+      "source": "reports/data/mac-fixed-validation/cwe-643/results/cwe643_codefuse.csv",
+      "sha256": "3ca162c115df3cdbccd9309874ce495d5924685ba6f3650f746b84beb4721c75",
+      "counts": {
+        "tp": 15,
+        "fp": 18,
+        "fn": 0,
+        "tn": 2,
+        "fp_in_scope": 18,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-022",
+      "source": "experiments/cwe-022/results/codeql/cwe022.sarif",
+      "sha256": "21a594774619c0e974c26acee822d1ea6bd43b9f81311dc65201d68a2e1853a5",
+      "counts": {
+        "tp": 133,
+        "fp": 67,
+        "fn": 0,
+        "tn": 69,
+        "fp_in_scope": 66,
+        "outside_scope_findings": 1
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-078",
+      "source": "experiments/cwe-078/results/codeql/cwe078.sarif",
+      "sha256": "30eda2be1f6d3bcf3cb1d179051c138a80c63fca81063950611e9e3279e762a1",
+      "counts": {
+        "tp": 126,
+        "fp": 64,
+        "fn": 0,
+        "tn": 61,
+        "fp_in_scope": 64,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-079",
+      "source": "experiments/cwe-079/results/codeql/cwe079.sarif",
+      "sha256": "fcd457539be4f19e4f1a9ca2a907b09805a08544014a1557bf4e3340005fdf6c",
+      "counts": {
+        "tp": 246,
+        "fp": 1475,
+        "fn": 0,
+        "tn": 119,
+        "fp_in_scope": 90,
+        "outside_scope_findings": 1385
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-089",
+      "source": "experiments/cwe-089/results/codeql/cwe089.sarif",
+      "sha256": "7192ab3675110af817863e8a3289dc59f991f94e0f79617d3d80eba015924a38",
+      "counts": {
+        "tp": 272,
+        "fp": 207,
+        "fn": 0,
+        "tn": 25,
+        "fp_in_scope": 207,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-090",
+      "source": "experiments/cwe-090/results/codeql/cwe090.sarif",
+      "sha256": "00d33c6098cd9b09954554660b4496aaca60700a08ad2a56923c59be1ae7c6cc",
+      "counts": {
+        "tp": 27,
+        "fp": 13,
+        "fn": 0,
+        "tn": 19,
+        "fp_in_scope": 13,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-327",
+      "source": "experiments/cwe-327/results/codeql/cwe327.sarif",
+      "sha256": "b816c9ccc2d98266598d7177c5b70eb7180df9c5ad33fa740691e66259de75d2",
+      "counts": {
+        "tp": 130,
+        "fp": 189,
+        "fn": 0,
+        "tn": 89,
+        "fp_in_scope": 27,
+        "outside_scope_findings": 162
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-328",
+      "source": "experiments/cwe-328/results/codeql/cwe328.sarif",
+      "sha256": "b816c9ccc2d98266598d7177c5b70eb7180df9c5ad33fa740691e66259de75d2",
+      "counts": {
+        "tp": 129,
+        "fp": 190,
+        "fn": 0,
+        "tn": 74,
+        "fp_in_scope": 33,
+        "outside_scope_findings": 157
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-330",
+      "source": "experiments/cwe-330/results/codeql/cwe330.sarif",
+      "sha256": "d0924a84dd02b62fd8ac1cf4846637069f4e020c22cd05b2cba58397b36506cc",
+      "counts": {
+        "tp": 218,
+        "fp": 0,
+        "fn": 0,
+        "tn": 275,
+        "fp_in_scope": 0,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-501",
+      "source": "experiments/cwe-501/results/codeql/cwe501.sarif",
+      "sha256": "f669af3a701c9b12e2a2aee377040ec78e20af578d1dc1f3396522d85e9a6134",
+      "counts": {
+        "tp": 83,
+        "fp": 24,
+        "fn": 0,
+        "tn": 19,
+        "fp_in_scope": 24,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-614",
+      "source": "experiments/cwe-614/results/codeql/cwe614.sarif",
+      "sha256": "b94e45d6eef207bcc63f643bed558bf518aac41f152436485377b974dff18ab1",
+      "counts": {
+        "tp": 36,
+        "fp": 0,
+        "fn": 0,
+        "tn": 31,
+        "fp_in_scope": 0,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    },
+    {
+      "tool": "codeql",
+      "cwe": "CWE-643",
+      "source": "experiments/cwe-643/results/codeql/cwe643.sarif",
+      "sha256": "a564ddbbad31d7931e59036520b9f22e15120b1caa6d962e1506fd8ab5468441",
+      "counts": {
+        "tp": 15,
+        "fp": 7,
+        "fn": 0,
+        "tn": 13,
+        "fp_in_scope": 7,
+        "outside_scope_findings": 0
+      },
+      "differences": {}
+    }
+  ],
+  "codeql_driver_metadata": {
+    "CWE-022": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-078": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-079": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-089": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-090": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-327": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-328": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-330": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-501": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-614": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    },
+    "CWE-643": {
+      "name": "CodeQL",
+      "version": null,
+      "semanticVersion": "2.25.3"
+    }
+  }
+}

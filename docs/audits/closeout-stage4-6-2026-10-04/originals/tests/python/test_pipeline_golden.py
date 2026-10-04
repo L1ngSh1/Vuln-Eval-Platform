@@ -68,12 +68,7 @@ def run_evaluate_aggregate(ws, out_root, skip_existing=True):
 
 def assert_matches_golden(actual: dict, golden_path: Path):
     golden = json.loads(golden_path.read_text(encoding="utf-8"))
-    # Keep historical goldens intact while checking every old field recursively.
-    def project(value, expected):
-        if isinstance(expected, dict):
-            return {key: project(value[key], child) for key, child in expected.items()}
-        return value
-    subset = project(actual, golden)
+    subset = {key: actual[key] for key in golden if key in actual}
     assert subset == golden, f"mismatch vs {golden_path.name}"
 
 

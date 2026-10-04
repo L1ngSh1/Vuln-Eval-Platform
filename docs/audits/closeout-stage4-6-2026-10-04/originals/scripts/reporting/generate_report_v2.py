@@ -26,8 +26,6 @@ Phase 2F: Does NOT replace existing generate_report.py / plots_metrics.py.
 """
 
 import argparse
-import json
-from dataclasses import asdict
 import sys
 from pathlib import Path
 
@@ -120,9 +118,6 @@ def filter_tools(report: ReportData, tools: list) -> ReportData:
 
     return ReportData(
         schema=report.schema,
-        fp_mode=report.fp_mode,
-        metric_contract=report.metric_contract,
-        sample_scope=report.sample_scope,
         tools=filtered_tools,
         cwes=filtered_cwes,
         overall=filtered_overall,
@@ -161,11 +156,7 @@ def main() -> int:
     # 2. Merge if multiple files
     # ------------------------------------------------------------------
     if len(reports) > 1:
-        try:
-            report = merge_report_data(reports)
-        except ValueError as exc:
-            print(f"Metric contract mismatch: {exc}", file=sys.stderr)
-            return 1
+        report = merge_report_data(reports)
         if args.verbose:
             print(f"\n  🔗 Merged {len(reports)} reports")
             print(f"     Tools: {report.tools}")
@@ -184,11 +175,6 @@ def main() -> int:
     if not report.tools:
         print("❌ Error: No tools found in metrics data", file=sys.stderr)
         return 1
-
-    out_dir.mkdir(parents=True, exist_ok=True)
-    with (out_dir / "report_data.json").open("w", encoding="utf-8") as handle:
-        json.dump(asdict(report), handle, indent=2, ensure_ascii=False, allow_nan=False)
-        handle.write("\n")
 
     # ------------------------------------------------------------------
     # 4. Generate charts

@@ -53,7 +53,7 @@ def evaluation_identity(tool, entry, findings_csv, ground_truth):
     root = Path(__file__).resolve().parent
     contract = [root / "core" / name for name in ("models.py", "normalization.py")]
     contract += [root / "evaluation" / name for name in (
-        "evaluator.py", "findings.py", "ground_truth.py", "metrics.py", "contract.py",
+        "evaluator.py", "findings.py", "ground_truth.py", "metrics.py",
     )]
     contract.append(Path(__file__))
     return {

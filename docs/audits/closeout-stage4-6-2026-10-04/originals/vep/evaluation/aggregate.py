@@ -10,7 +10,6 @@ from pathlib import Path
 from typing import List, Dict, Optional
 
 from vep.core.normalization import normalize_cwe_id
-from vep.evaluation.contract import CUSTOM_FPR, METRIC_CONTRACT, STANDARD_FPR, UNIT, metric_modes, standard_fpr
 
 
 def load_metrics_json(path: Path) -> dict:
@@ -92,29 +91,14 @@ def aggregate_metrics(
         # Store per-CWE metrics
         cwes_aggregated[cwe] = metrics
 
-    # These contracts are correctness requirements, not optional strict checks.
-    if len(fp_modes_seen) > 1:
-        raise ValueError(f"Mixed FP modes: {fp_modes_seen}")
-    if len(tools_seen) > 1:
-        raise ValueError(f"Mixed tools: {tools_seen}")
-    if tool and tool not in tools_seen:
-        raise ValueError(f"Expected tool {tool}, found {tools_seen}")
-    contracts = {m.get("metric_contract") for m in metrics_list}
-    scopes = [m.get("sample_scope") or {} for m in metrics_list]
-    if len(contracts) > 1:
-        raise ValueError("Mixed metric contracts")
-    if len({s.get("dataset_sha256") for s in scopes}) > 1:
-        raise ValueError("Mixed ground truth datasets/sample sets")
-    if len({s.get("unit") for s in scopes}) > 1:
-        raise ValueError("Mixed statistic units")
-    if strict and any(not s.get("verified", False) for s in scopes):
-        raise ValueError("Strict aggregation requires verified sample identities")
-    complete_tn = all(m.get("tn") is not None for m in metrics_list)
-    has_tn = complete_tn
-    def sum_known(name):
-        return sum(m[name] for m in metrics_list) if all(m.get(name) is not None for m in metrics_list) else None
-    fp_in_scope = sum_known("fp_in_scope")
-    fp_all_non_gt = sum_known("fp_all_non_gt")
+    # Validate consistency if strict
+    if strict:
+        if len(fp_modes_seen) > 1:
+            raise ValueError(f"Mixed FP modes in strict mode: {fp_modes_seen}")
+        if tool and len(tools_seen) > 1:
+            raise ValueError(f"Mixed tools in strict mode: {tools_seen}")
+        if tool and tool not in tools_seen:
+            raise ValueError(f"Expected tool {tool}, found {tools_seen}")
 
     # Determine aggregated metadata
     if len(tools_seen) == 1:
@@ -152,14 +136,6 @@ def aggregate_metrics(
         "schema_version": "vep.aggregate.v2",
         "tool": agg_tool,
         "fp_mode": agg_fp_mode,
-        "metric_contract": next(iter(contracts)) or "legacy_unverified",
-        "sample_scope": {
-            "unit": scopes[0].get("unit", "unknown"),
-            "dataset_sha256": scopes[0].get("dataset_sha256"),
-            "cwes": {cwe: m.get("sample_scope") or {} for cwe, m in cwes_aggregated.items()},
-            "verified": all(s.get("verified", False) for s in scopes),
-        },
-        "metric_modes": metric_modes(total_tp, fp_in_scope, fp_all_non_gt, total_fn, total_tn if complete_tn else None),
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "included_count": len(metrics_list),
         "cwes": cwes_aggregated,
@@ -173,16 +149,6 @@ def aggregate_metrics(
             "fnr": overall_fnr,
             "fpr": overall_fpr,
             "fdr": overall_fdr,
-            "fp_in_scope": fp_in_scope,
-            "fp_all_non_gt": fp_all_non_gt,
-            "outside_scope_findings": sum_known("outside_scope_findings"),
-            "in_scope_findings": sum_known("in_scope_findings"),
-            "dedup_findings": sum_known("dedup_findings"),
-            "raw_findings": sum_known("raw_findings"),
-            "cwe_scope_total": sum_known("cwe_scope_total"),
-            "fpr_in_scope": standard_fpr(fp_in_scope, total_tn if complete_tn else None),
-            "fpr_definition": (CUSTOM_FPR if agg_fp_mode == "all_non_gt" else STANDARD_FPR
-                               if agg_fp_mode == "in_scope" else "legacy/unknown; standard FPR unverified"),
         },
         "metadata": {
             "fp_modes_seen": sorted(fp_modes_seen),

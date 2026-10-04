@@ -9,7 +9,6 @@ import json
 from pathlib import Path
 
 from vep.core.models import EvalResult, EvaluationDetails
-from vep.evaluation.contract import CUSTOM_FPR, METRIC_CONTRACT, STANDARD_FPR, metric_modes, standard_fpr
 
 
 def eval_result_to_dict(result: EvalResult) -> dict:
@@ -48,12 +47,6 @@ def eval_result_to_dict(result: EvalResult) -> dict:
         "fdr": result.fdr,
         "f1": result.f1,
         "schema_version": result.schema_version,
-        "metric_contract": METRIC_CONTRACT,
-        "sample_scope": result.sample_scope,
-        "fpr_in_scope": standard_fpr(result.fp_in_scope, result.tn),
-        "fpr_definition": CUSTOM_FPR if result.fp_mode == "all_non_gt" else STANDARD_FPR,
-        "metric_modes": metric_modes(result.tp, result.fp_in_scope, result.fp_all_non_gt, result.fn, result.tn),
-        "outside_scope_definition": "unique normalized testcase IDs per CWE outside the selected GT population",
     }
 
     # Optional fields

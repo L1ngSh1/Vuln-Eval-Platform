@@ -4,7 +4,6 @@ Phase 2: Unified Evaluation Core
 """
 
 import csv
-import hashlib
 from pathlib import Path
 from typing import List, Optional
 
@@ -43,7 +42,6 @@ def load_expected_cases(
     target_cwe_normalized = normalize_cwe_id(cwe) if cwe else None
 
     expected_cases = []
-    dataset_sha256 = hashlib.sha256(path.read_bytes()).hexdigest()
 
     with path.open("r", encoding="utf-8", newline="") as f:
         reader = csv.reader(f)
@@ -91,7 +89,6 @@ def load_expected_cases(
                 is_vulnerable=is_vulnerable,
                 category=category,
                 raw={
-                    "dataset_sha256": dataset_sha256,
                     "testcase_raw": testcase_raw,
                     "cwe_raw": cwe_raw,
                     "vulnerable_raw": vulnerable_raw

@@ -26,41 +26,6 @@ def _pct(v: float) -> str:
     return f"{v * 100:.2f}%"
 
 
-def _contract_section(report: ReportData, chinese=False) -> str:
-    """Use serialized mode metrics, never silently recompute a different scope."""
-    scope = report.sample_scope
-    title = "指标口径与样本范围" if chinese else "Metric contract and sample population"
-    note = ("范围外告警保留；旧 fpr 是自定义口径。fpr_in_scope 分母缺失或为零时为 N/A。"
-            if chinese else "Outside-scope findings are retained. Legacy fpr is custom. fpr_in_scope is N/A when its denominator is missing or zero.")
-    text = (f"\n## {title}\n\n"
-            f"- fp_mode: `{report.fp_mode}`; metric_contract: `{report.metric_contract}`\n"
-            f"- sample_scope: unit=`{scope.get('unit', 'unknown')}`; "
-            f"dataset_sha256=`{scope.get('dataset_sha256') or 'unknown'}`; verified=`{scope.get('verified', False)}`\n"
-            f"- {note}\n"
-            "- fpr_in_scope = FP_in_scope / (FP_in_scope + TN_in_scope).\n"
-            "- all_non_gt includes outside-scope findings; in_scope uses labelled cases only.\n\n"
-            "| Tool | fp_mode | TP | FP | FN | Precision | Recall | F1 | outside_scope_findings | fpr_in_scope |\n"
-            "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|\n")
-    for tool in report.tools:
-        tm = report.overall.get(tool)
-        if tm is None:
-            continue
-        for mode in ("all_non_gt", "in_scope"):
-            values = tm.metric_modes.get(mode)
-            if values is None:
-                text += f"| {tool_display_name(tool)} | {mode} | N/A | N/A | N/A | N/A | N/A | N/A | {tm.outside_scope_findings if tm.outside_scope_findings is not None else 'unknown'} | N/A |\n"
-                continue
-            fpr = values.get("fpr_in_scope")
-            text += (f"| {tool_display_name(tool)} | {mode} | {values['tp']} | {values['fp']} | {values['fn']} | "
-                     f"{_fmt(values['precision'])} | {_fmt(values['recall'])} | {_fmt(values['f1'])} | "
-                     f"{tm.outside_scope_findings} | {_fmt(fpr) if fpr is not None else 'N/A'} |\n")
-    text += "\nCWE sample_scope fingerprints:\n"
-    for cwe, population in sorted(scope.get("cwes", {}).items()):
-        text += (f"- {cwe}: scope_sha256=`{population.get('scope_sha256', 'unknown')}`; "
-                 f"positive={population.get('positive', 'unknown')}; negative={population.get('negative', 'unknown')}.\n")
-    return text + "\n"
-
-
 def _tool_overall_block_en(tool: str, tm: ToolMetrics) -> str:
     return (
         f"### {tool_display_name(tool)}\n\n"
@@ -72,10 +37,6 @@ def _tool_overall_block_en(tool: str, tm: ToolMetrics) -> str:
         f"| TP | {tm.tp} |\n"
         f"| FP | {tm.fp} |\n"
         f"| FN | {tm.fn} |\n"
-        f"| fp_mode | {tm.fp_mode} |\n"
-        f"| outside_scope_findings | {tm.outside_scope_findings if tm.outside_scope_findings is not None else 'unknown'} |\n"
-        f"| fpr_in_scope | {_fmt(tm.fpr_in_scope) if tm.fpr_in_scope is not None else 'N/A'} |\n"
-        f"| Legacy fpr | {_fmt(tm.fpr)} — {tm.fpr_definition} |\n"
     )
 
 
@@ -90,10 +51,6 @@ def _tool_overall_block_zh(tool: str, tm: ToolMetrics) -> str:
         f"| 真阳性（TP） | {tm.tp} |\n"
         f"| 误报（FP） | {tm.fp} |\n"
         f"| 漏报（FN） | {tm.fn} |\n"
-        f"| fp_mode | {tm.fp_mode} |\n"
-        f"| outside_scope_findings | {tm.outside_scope_findings if tm.outside_scope_findings is not None else 'unknown'} |\n"
-        f"| fpr_in_scope | {_fmt(tm.fpr_in_scope) if tm.fpr_in_scope is not None else 'N/A'} |\n"
-        f"| 历史 fpr | {_fmt(tm.fpr)} — {tm.fpr_definition} |\n"
     )
 
 
@@ -172,7 +129,6 @@ def generate_english_report(report: ReportData) -> str:
     sections.append(f"> **Tools evaluated:** {tool_list}  \n")
     sections.append(f"> **CWEs covered:** {n_cwes}  \n")
     sections.append(f"> **Generated:** {today}\n")
-    sections.append(_contract_section(report))
 
     # Overall Performance
     sections.append("\n---\n\n## Overall Performance\n")
@@ -253,7 +209,6 @@ def generate_chinese_report(report: ReportData) -> str:
     sections.append(f"> **评估工具：** {tool_list}  \n")
     sections.append(f"> **覆盖 CWE：** {n_cwes} 种  \n")
     sections.append(f"> **生成日期：** {today}\n")
-    sections.append(_contract_section(report, chinese=True))
 
     # Overall
     sections.append("\n---\n\n## 总体表现\n")

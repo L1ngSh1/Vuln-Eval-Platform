@@ -1,0 +1,23 @@
+testcase,ruleId,file,line,message
+BenchmarkTest00116,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00116.java,90,XPath expression depends on a [user-provided value](1).
+BenchmarkTest00207,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00207.java,75,XPath expression depends on a [user-provided value](1).
+BenchmarkTest00442,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00442.java,68,XPath expression depends on a [user-provided value](1).
+BenchmarkTest00607,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00607.java,79,XPath expression depends on a [user-provided value](1).
+BenchmarkTest00852,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00852.java,93,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01014,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01014.java,82,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01224,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01224.java,70,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01223,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01223.java,72,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01316,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01316.java,63,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01478,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01478.java,79,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01562,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01562.java,67,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01561,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01561.java,67,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01632,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01632.java,67,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01734,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01734.java,89,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01736,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01736.java,87,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01894,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01894.java,82,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01892,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01892.java,84,XPath expression depends on a [user-provided value](1).
+BenchmarkTest01974,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest01974.java,70,XPath expression depends on a [user-provided value](1).
+BenchmarkTest02100,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02100.java,72,XPath expression depends on a [user-provided value](1).
+BenchmarkTest02189,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02189.java,65,XPath expression depends on a [user-provided value](1).
+BenchmarkTest02370,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02370.java,79,XPath expression depends on a [user-provided value](1).
+BenchmarkTest02457,java/xml/xpath-injection,src/main/java/org/owasp/benchmark/testcode/BenchmarkTest02457.java,65,XPath expression depends on a [user-provided value](1).

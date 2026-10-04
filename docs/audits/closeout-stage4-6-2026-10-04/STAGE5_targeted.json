@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_archive_replay.py"
+  ],
+  "input": "final stage5 archive checks including missing lock checksum and text-only links",
+  "stdout": ".................                                                        [100%]\n17 passed in 1.57s\n",
+  "stderr": "",
+  "exit_status": 0
+}

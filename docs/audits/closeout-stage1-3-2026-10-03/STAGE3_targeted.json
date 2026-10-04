@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/python/test_legacy_entrypoints.py"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "real wrappers incl positive SARIF TP/FP/FN, bad inputs, exact exit codes and concurrent cleanup",
+  "exit_status": 0,
+  "stdout": "..................                                                       [100%]\n18 passed in 14.66s\n",
+  "stderr": ""
+}

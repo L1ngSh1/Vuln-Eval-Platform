@@ -1,0 +1,12 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--check"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "current stage3 diff whitespace/integrity",
+  "exit_status": 0,
+  "stdout": "",
+  "stderr": ""
+}

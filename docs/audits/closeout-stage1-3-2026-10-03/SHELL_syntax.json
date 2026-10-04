@@ -1,0 +1,15 @@
+{
+  "command": [
+    "bash",
+    "-n",
+    "run_eval.sh",
+    "scripts/quick_verify.sh",
+    "scripts/evaluation/eval_checker.sh",
+    "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform/docs/audits/closeout-stage1-3-2026-10-03/ROLLBACK.sh"
+  ],
+  "cwd": "/Users/y4n9/Workspace/Projects/My-github-projects/Vuln-Eval-Platform",
+  "input": "Bash parser validation of all modified shell scripts",
+  "exit_status": 0,
+  "stdout": "",
+  "stderr": ""
+}

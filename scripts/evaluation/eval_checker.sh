@@ -8,9 +8,9 @@
 #       ./scripts/evaluation/eval_checker.sh 022
 # 可用环境变量: DB_DIR（覆盖数据库路径）、CODEFUSE_HOME（覆盖工具路径）
 # ==============================================================================
-set -e
+set -eo pipefail
 
-CWE_ID=$1
+CWE_ID=${1:-}
 if [ -z "$CWE_ID" ]; then
     echo "❌ 错误: 缺少 CWE 编号参数。"
     echo "用法: $0 <CWE编号> (例如: 078, 022)"
@@ -35,7 +35,7 @@ if [ -n "${DB_DIR:-}" ]; then
     DB_ARGS=(--db "${DB_DIR}")
 fi
 
-exec python3 scripts/evaluation/run_pipeline.py \
+exec "${PYTHON:-python3}" scripts/evaluation/run_pipeline.py \
     --tool codefuse \
     --cwe "${CWE_ID}" \
     --stages run,evaluate \
